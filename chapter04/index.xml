@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter04s on Computergrafik</title>
+    <link>general/chapter04/</link>
+    <description>Recent content in Chapter04s on Computergrafik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Sat, 04 Mar 2017 15:38:00 +0100</lastBuildDate><atom:link href="general/chapter04/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lektion 4 - Shading &amp; Rendering</title>
+      <link>general/chapter04/lecture01/</link>
+      <pubDate>Sat, 04 Mar 2017 15:38:00 +0100</pubDate>
+      
+      <guid>general/chapter04/lecture01/</guid>
+      <description>Inhalt  Rendering Cycles-Nodes Grundlagen Grundprinzip Shader  Fortsetzung in Kapitel 5 (Texturen, Mix Nodes, Bump und Displacement, Node Gruppen, UV Editing) 1. Rendering Rendering beschreibt den Prozess, aus den bestehenden Szenen-Daten (Modelle, Materialien, Licht, Kamera) ein Bild Blender zu berechnen. Rendering findet genau genommen schon im 3D-Editor statt, hier sogar in Echtzeit, um überhaupt interaktiv Änderungen an der Szene vornehmen zu können. Meist beschreibt aber der Begriff Rendering den Vorgang, explizit ein Bild in hoher Qualität mit allen Material- und Licht-Einstellungen zu berechnen.</description>
+    </item>
+    
+    <item>
+      <title>Übung 4.1 - Shading</title>
+      <link>general/chapter04/exercise01_b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>general/chapter04/exercise01_b/</guid>
+      <description>In der folgenden Übung werden wir unserem Schwert Materialien geben und zum Rendern in Szene setzen. Das Schild wird in Übung 5 dazukommen.
+1. Vorbereitung  Öffnet das in Übung 2 modellierte Schwert. Alternativ kann auch dieses Modell verwendet werden. Wechselt in den Shading Workspace   Nun haben sich einige neue Bereiche geöffnet:
+   unten seht ihr nun den Shader Editor. Hier wird immer das Material des markierten Objekts angezeigt.</description>
+    </item>
+    
+    <item>
+      <title>Übung 4.1 - Shading und Rendering</title>
+      <link>general/chapter04/exercise01_a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>general/chapter04/exercise01_a/</guid>
+      <description>In der folgenden Übung werden wir eine Unterwasserszene rendern, um in den nachfolgenden Übungen unsere bisherig erstellten Objekte hineinzusetzen.
+1. Wasseroberfläche 1.1 Setup  Startet eine neue Blender Szene Löscht den Würfel und das Punktlicht aus der Szene heraus Fügt der Szene eine neue Plane hinzu (Shift + A → Mesh → Plane). Diese Plane soll unsere Wasseroberfläche werden. Benennt sie entsprechend. Skaliert die Plane ca. um das 50 fache (S + 5 + 0) Verschiebt und dreht die Kamera so, dass sie die Wasseroberfläche von leicht schräg unten betrachtet.</description>
+    </item>
+    
+    <item>
+      <title>Übung 4.2 - Licht und Rendering</title>
+      <link>general/chapter04/exercise02_b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>general/chapter04/exercise02_b/</guid>
+      <description>1. Szenenanordnung Wechselt zum zurück zum Layout Workspace
+ Stellt die Ansicht auf Rendered um [1] Ordnet eure Objekte (Schwert &amp;amp; Stein) hübsch an. Modelliert einen einfachen Untergrund hinzu, dem ihr das gleiche Material wie dem Stein geben könnt (alternativ könnt ihr natürlich auch ein neues Material entwerfen). Platziert die Kamera. Klickt dazu auf das Kamera-Icon [2] oben Rechts in der 3D Ansicht (oder Numpad + 0). Über den View → Navigation → Walk Navigation kann ein &amp;ldquo;Ego&amp;rdquo; Modus aktiviert werden, in dem ihr die Ansicht mit WASD und der Maus anpassen könnt.</description>
+    </item>
+    
+  </channel>
+</rss>

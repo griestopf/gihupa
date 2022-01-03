@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abgabes on Computergrafik</title>
+    <link>general/abgabe/</link>
+    <description>Recent content in Abgabes on Computergrafik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language><atom:link href="general/abgabe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leistungsbeispiele</title>
+      <link>general/abgabe/leistungsbeispiele/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>general/abgabe/leistungsbeispiele/</guid>
+      <description>Hall of Fame Hier können Sie sich einige Beispiele sehr guter Animationen aus den vergangenen Semestern ansehen. Die Exponate übertreffen die Anforderungen bei Weitem. Zeigen jedoch auch was teilweise ohne Vorkenntnisse in den wenigen Wochen für Erfolge möglich sind.</description>
+    </item>
+    
+    <item>
+      <title>Projektauftrag - Animationsfilm</title>
+      <link>general/abgabe/projektauftrag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>general/abgabe/projektauftrag/</guid>
+      <description>Aufgabe Ziel ist es, eine Animation mit den gelernten 3D-Modelling, -Shading und -Animationstechniken zu konzipieren und umzusetzen. Inhaltlich besteht vollkommene Freiheit.
+Beispiele:  (Technische) Visualisierung in Form eines Lehrvideos: Wie funktioniert eigentlich&amp;hellip;  &amp;hellip;ein Verbrennungsmotor? &amp;hellip;die Energierückgewinnung bei der Bremse eines E-Autos? &amp;hellip;ein Laser-/Tintenstrahl-Drucker? &amp;hellip; eigene Ideen!   Logo-Animation eines realen oder eines  Fantasie-LogosoFantasie-Logo ggf. inspiriert durch real existierendes. Kamerafahrt durch das Logo Umgebung passend zum Produkt/zur Organisation des Logos Transformation von Objekten in Teile des Logos Ende: Logo sieht aus „wie gedruckt“ Ggf.</description>
+    </item>
+    
+    <item>
+      <title>Resourcen &amp; Tutorials</title>
+      <link>general/abgabe/tutorials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>general/abgabe/tutorials/</guid>
+      <description>Projektstrukturierung    Art/Länge Titel Thema Quelle     7:19 Collections - Blender 2.80 Fundamentals Collections YouTube - Blender (offizieller Kanal)   9:14 Blender - Kollaboration und Collections Kollaboration &amp;amp; Collections Simon Storl-Schulke   13:22 Append / Link Blend Files in 2.8 - Switch to Blender Kollaboration YouTube - Lukas Stratmann    Basics    Art/Länge Titel Thema Quelle     26:00 Blender 2.</description>
+    </item>
+    
+    <item>
+      <title>Tipps und Hinweise zum Projektauftrag</title>
+      <link>general/abgabe/tipps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>general/abgabe/tipps/</guid>
+      <description>stellt Fragen Wenn ihr nicht weiter kommt, fragt einen der Tutoren. Wir sind auch in der zweiten Semesterhälfte jede Woche bei den Übungen da. Notfalls auch per E-Mail.
+Zeitmanagement Früh anfangen und Zeit nutzen. Wer erst im Dezember anfängt, hat schon verloren. Erfahrungsgemäß wird die Zeit nach hinten sehr knapp. Die Zeit läuft AB JETZT! Insbesondere Gruppen, die sich noch nicht kennen, sollten früh viel Zeit miteinander verbringen.
+Regelmäßige Gruppentreffen. Nutzt die Möglichkeit, Euch dienstags nachmittags zwischen 14:00 und 17:15 unter Betreuung in den Räumen des L-Bau zu treffen und an der Abgabe zu arbeiten.</description>
+    </item>
+    
+  </channel>
+</rss>

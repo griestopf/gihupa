@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="de">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Übung 1 - Intro - Computergrafik</title>
+    <meta name="generator" content="Hugo 0.91.2" />
+
+    
+    <meta name="description" content="Online-Material zum Fach Computergrafik.">
+    
+    <link rel="canonical" href="general/chapter01/exercise01_a/">
+    
+
+    <meta property="og:url" content="general/chapter01/exercise01_a/">
+    <meta property="og:title" content="Computergrafik">
+    <meta property="og:image" content="general/images/lecture_logo_cg.png">
+    <meta name="apple-mobile-web-app-title" content="Computergrafik">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="general/images/lecture_icon.png">
+    <link rel="icon" type="image/x-icon" href="general/images/lecture_icon.png">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('general/fonts/icon.eot');
+        src: url('general/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('general/fonts/icon.woff')
+               format('woff'),
+             url('general/fonts/icon.ttf')
+               format('truetype'),
+             url('general/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="general/stylesheets/application.css">
+    <link rel="stylesheet" href="general/stylesheets/temporary.css">
+    <link rel="stylesheet" href="general/stylesheets/palettes.css">
+    <link rel="stylesheet" href="general/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="general/stylesheets/custom.css">
+    
+    <script src="general/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-light-green palette-accent-lime">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Übung 1 - Intro
+      </div>
+    </div>
+
+    
+
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="general/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="general/images/lecture_logo_cg.png">
+        </div>
+      
+      <div class="name">
+        <strong>Computergrafik </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Allgemeines" href="general/">
+	
+	Allgemeines
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 1</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="1.0 - Lektion - Blender" href="general/chapter01/lecture01/">
+	
+	1.0 - Lektion - Blender
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="1.1 - Übung - Intro" href="general/chapter01/exercise01_b/">
+	
+	1.1 - Übung - Intro
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 2</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="2.0 - Lektion - Einfaches Modelling" href="general/chapter02/lecture01/">
+	
+	2.0 - Lektion - Einfaches Modelling
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="2.1 - Übung - Polygonal Modeling" href="general/chapter02/exercise01_b/">
+	
+	2.1 - Übung - Polygonal Modeling
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 3</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="3.0 - Lektion - Geometrie verstehen" href="general/chapter03/lecture01/">
+	
+	3.0 - Lektion - Geometrie verstehen
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="3.1 - Übung - Box Modeling" href="general/chapter03/exercise01_b">
+	
+	3.1 - Übung - Box Modeling
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="3.2 - Übung - Scultping*" href="general/chapter03/exercise02_b/">
+	
+	3.2 - Übung - Scultping*
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 4</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="4 - Lektion - Shading &amp; Rendering" href="general/chapter04/lecture01/">
+	
+	4 - Lektion - Shading &amp; Rendering
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="4.1 - Übung - Shading" href="general/chapter04/exercise01_b/">
+	
+	4.1 - Übung - Shading
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="4.2 - Übung - Licht &amp; Rendering" href="general/chapter04/exercise02_b/">
+	
+	4.2 - Übung - Licht &amp; Rendering
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 5</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="5 - Lektion - Materialien &amp; Texturen" href="general/chapter05/lecture01/">
+	
+	5 - Lektion - Materialien &amp; Texturen
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="5.1 - Übung - UV Editing" href="general/chapter05/exercise01_b/">
+	
+	5.1 - Übung - UV Editing
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="5.2 - Übung - Texture Painting" href="general/chapter05/exercise02_b/">
+	
+	5.2 - Übung - Texture Painting
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 6</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="6 - Lektion - Animation" href="general/chapter06/lecture01/">
+	
+	6 - Lektion - Animation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="6 - Übung - Katapulbelagerung" href="general/chapter06/exercise01_b/">
+	
+	6 - Übung - Katapulbelagerung
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 7</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="7.1 - Übung - Rigging" href="general/chapter07/exercise01_b/">
+	
+	7.1 - Übung - Rigging
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="7.2 - Übung - Partikel &amp; Feuer" href="general/chapter07/exercise02_b/">
+	
+	7.2 - Übung - Partikel &amp; Feuer
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">FELIX</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/4046684375">
+	
+	Ergebnisse einreichen
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Übung 1 - Intro </h1>
+
+			<h2 id="objekte-transformation-und-szenenaufbau">Objekte, Transformation und Szenenaufbau</h2>
+<p><strong>Das folgende Kapitel behandelt die Grundlagen der Blender-Bedienung. Es wird das Arbeiten im 3-dimensionalen Raum, das Erstellen und Verändern primitiver Objekte, die Hierarchieanordnung mit Pivot und grundlegende Materialzuweisung geübt. Dazu wird über den Verlauf der Übung ein kleines U-Boot modelliert.</strong></p>
+<p><img src="img/result.png" alt="img"></p>
+<h2 id="1-vorbereitung">1. Vorbereitung</h2>
+<h3 id="11-benutzeroberfläche">1.1 Benutzeroberfläche</h3>
+<p><strong>Für Laptopnutzer:</strong> Um den Übungen folgen zu können und Blender ohne Umstände zu nutzen wird in der Regel eine Mause benötigt. Sollte Blender bei euch ruckeln und eine sehr schlechte Performance liefern, solltet ihr mit einem Rechtsklick auf die Blender.exe eure Onboard-Grafikkarte auswählen.</p>
+<p><img src="img/NewFile.png" alt="img"></p>
+<ul>
+<li>Startet Blender.</li>
+</ul>
+<blockquote>
+<p>Die Benutzeroberfläche von Blender ist individuell anpassbar und kommt mit 10 vorgefertigten Layouts, so genannten <em>Workspaces</em> (<em>Layout</em>, <em>Modeling</em>, <em>Sculpting</em>, <em>UV Editing</em> etc.). Für die üblichen Arbeitsschritte gibt es optimierte <em>Workspaces</em>, die sich über die Reiter direkt neben der <em>Menu Bar</em> wechseln lassen. Standardmäßig ist der Workspace <em>Layout</em> eingestellt.</p>
+</blockquote>
+<blockquote>
+<p>Blender ist in rechteckige Areale unterteilt, die man anhand der abgerundeten Ecken unterscheiden kann. Durch Klick auf den Fensterrand (Mousezeiger ändert sich in Doppelpfeil) bei gleichzeitigem Halten und Ziehen lässt sich jedes Fenster in seiner Größe anpassen. Durch Klick in eine der Ecken (Mousezeiger ändert sich in ein Fadenkreuz) kann man durch Ziehen entweder Fenster teilen oder wieder zu einem einzigen verbinden.</p>
+</blockquote>
+<blockquote>
+<p>In jedem Fenster befindet sich außerdem in dessen linken-oberen Ecke ein Dropdown-Menu über welches der angezeigte <em>Editor Type</em> gewechselt werden kann. Dazu zählen z.B. <em>3D-Viewport</em>, <em>Timeline</em>, <em>Outliner</em>, <em>UV-</em> und <em>Graph Editor</em>.</p>
+</blockquote>
+<h3 id="11-3d-navigation">1.1 3D Navigation</h3>
+<ul>
+<li>
+<p>Die Navigation in der 3D-Ansicht von Blender ist sowohl über die Gizmos am rechten Rand der 3D Ansicht möglich, als auch über folgende Shortcuts</p>
+</li>
+<li>
+<p>Wenn die Maus keine mittlere Maustaste/Mausrad besitzt, aktiviert <em><strong>Edit → Preferences → Input → Mouse → Emulate 3 Button Mouse</strong></em></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Shortcut</th>
+<th>Shortcut mit Emulate 3 Button Mouse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ansicht drehen</td>
+<td><code>mittlere Maustaste</code> gedrückt</td>
+<td><code>Alt + linke Maustaste</code> gedrückt</td>
+</tr>
+<tr>
+<td>Ansicht verschieben</td>
+<td><code>Shift + Mittlere Maustaste</code> gedrückt</td>
+<td><code>Alt + Shift + linke Maustaste</code> gedrückt</td>
+</tr>
+<tr>
+<td>Zoom</td>
+<td><code>Mausrad</code> / <code>Strg + Mittlere Maustaste</code> gedrückt</td>
+<td><code>Alt + Strg + linke Maustaste</code> gedrückt</td>
+</tr>
+</tbody>
+</table>
+<p><img src="img/navigation.gif" alt="navigation"></p>
+<blockquote>
+<p>Etwas gewöhnungsbedürftig ist dabei, dass die Ansicht sich immer um einen unsichtbaren Punkt im Raum dreht und dementsprechend Heranzoomen nur bis zu diesem Punkt möglich ist. Das Verschieben der Ansicht verschiebt auch diesen Punkt</p>
+</blockquote>
+<ul>
+<li>Um die 3D-Ansicht schnell wieder zum ausgewählten Objekt zu bringen, kann <code>Numpad Komma</code> gedrückt werden. Wenn euer Laptop kein Numpad hat, kann der auch über <em><strong>View → Frame Selected</strong></em> ausgewählt werden (mit Rechtsklick lässt sich ein neuer Shortcut dafür anlegen)</li>
+</ul>
+<p><img src="img/frame_selected.gif" alt="frame selected"></p>
+<blockquote>
+<p>Die Mausfunktionen für den Bereich, in dem sich die Maus momentan befindet, werden auch in der Fußzeile von Blender angezeigt.</p>
+</blockquote>
+<h2 id="2-grundaufbau">2. Grundaufbau</h2>
+<p><img src="img/01_sphere.png" alt="img"></p>
+<ul>
+<li>
+<p>Um die Start-Szene zu bereinigen, drückt zunächst die Taste <code>A</code>, um alle Objekte auszuwählen, und anschließend <code>X</code> um die ausgewählten Objekte zu löschen.</p>
+</li>
+<li>
+<p>Im <em>3D-Viewport</em> könnt ihr über die Schaltfläche <em><strong>Add</strong></em> oder mit dem Shortcut <code>Shift + A</code> neue Objekte hinzufügen. Wählt <em><strong>Add → Mesh → UV Sphere</strong></em> um der Szene eine Kugel hinzuzufügen <!-- raw HTML omitted -->1<!-- raw HTML omitted -->.</p>
+</li>
+<li>
+<p><strong><!-- raw HTML omitted -->Gebt allen Objekten immer sinnvolle Namen!<!-- raw HTML omitted --></strong> In diesem Fall soll die Kugel der Rumpf des U-Boots werden, also nennen wir sie &ldquo;Rumpf&rdquo;. Objekte können mit der Taste <code>F2</code> oder im <em>Outliner</em> mit <code>Doppelklick</code> unbenannt werden <!-- raw HTML omitted -->2<!-- raw HTML omitted --></p>
+</li>
+</ul>
+<p><img src="img/02_scale.png" alt="img"></p>
+<ul>
+<li>
+<p>Wählt das <em>Scale</em> Werkzeug aus <!-- raw HTML omitted -->1<!-- raw HTML omitted --> und skaliert die Kugel mit den nun erschienenen Gizmos auf der grünen <!-- raw HTML omitted -->Y-Achse<!-- raw HTML omitted --> in die Länge.</p>
+</li>
+<li>
+<p>Drückt <code>N</code> um die <em><strong>Sidebar</strong></em> aufzurufen. Dort könnt ihr, unter anderem die Position, Rotation, Skalierung und Dimensionen eurer ausgewählten Objekte genauer einstellen <!-- raw HTML omitted -->2<!-- raw HTML omitted -->.</p>
+</li>
+<li>
+<p>Fügt nun weitere Objekte mit <code>Shift + A → Mesh</code> hinzu, um die Grundform des U-Bootes aufzubauen. Verwendet die Translate, Rotate und Scale Werkzeuge um die Objekte zu manipulieren. In diesem Beispiel wurde ein <strong>Zylinder</strong> als Kabine und ein <strong>Torus</strong> als Halterung für die Schiffsschraube verwendet.</p>
+</li>
+</ul>
+<p><img src="img/form.gif" alt="img"></p>
+<blockquote>
+<p>Um Objekte zu schneller zu transformieren, können auch die Shortcuts <code>G</code> (Grab), <code>R</code> (Rotate) und <code>S</code> (Skale) verwendet werden. Durch anschließendes Drücken von <code>X</code>, <code>Y</code> oder <code>Z</code> kann die jeweilige Transformation auf eine Achse beschränkt werden.</p>
+</blockquote>
+<blockquote>
+<p><img src="img/translate.gif" alt="translate"></p>
+</blockquote>
+<h2 id="3-fenster">3. Fenster</h2>
+<h3 id="31-fenster-modellieren">3.1 Fenster modellieren</h3>
+<ul>
+<li>Erstellt für die Fenster zunächst einen Rahmen mit einem Torus Objekt. Verschiebt es an eine Stelle, an der ihr besser damit arbeiten könnt.</li>
+<li>Verschiebt nun den 3D-Cursor (den Punkt, an dem neue Objekte generiert werden) an die Stelle des Fensterrahmens mit <code>Shift + S → Cursor to Selected</code>.</li>
+<li>Fügt nun als Fensterscheibe ein <em>Circle</em> Objekt hinzu.</li>
+<li>Öffnet daraufhin das Ausklappmenü unten links (in diesem Menü findet ihr immer die Einstellungen zur zuletzt ausgeführten Aktion). Wählt hier als <em><strong>Fill Type</strong></em> <em><strong>Ngon</strong></em> aus.</li>
+</ul>
+<p><img src="img/window.gif" alt="window"></p>
+<ul>
+<li>Ordnet nun die Fensterscheibe dem Fensterrahmen hierarchisch unter, damit diese sich mit dem Rahmen bewegt und dreht. Zieht die Scheibe dafür im Outliner mit der Maus und gedrückter <code>Shift</code> Taste über den Fensterrahmen.</li>
+</ul>
+<p><img src="img/parent.gif" alt="translate"></p>
+<h3 id="32-fenster-anbringen">3.2 Fenster anbringen</h3>
+<p>Nun sollen die Fenster am Rumpf angebracht werden.</p>
+<p><img src="img/snapping.png" alt="translate"></p>
+<ul>
+<li>Aktiviert über das Magnet-Icon oben im 3D-Viewport die <a href="https://docs.blender.org/manual/en/2.82/scene_layout/object/editing/transform/control/snap.html#transform-snap"><em>Snap</em> Funktion</a> und im Dropdown-Menü daneben <em>Snap to Face</em>, <em>Snap with Center</em> und <em>Align Rotation to Target</em> aus</li>
+<li>Nun kann der Fensterrahmen mit dem Move Tool oder dem Shortcut <code>G</code> über den Rumpf geschoben werden und passt die Rotation an dessen Oberfläche an.</li>
+<li>Wählt nun beide Fensterteile aus (mehrere Objekte können mit gedrückter <code>Shift</code> Taste selektiert werden)</li>
+<li>Dupliziert das Fenster mit <code>Alt + D</code> und verschiebt die Kopie an eine neue Stelle.</li>
+</ul>
+<blockquote>
+<p><strong>ACHTUNG:</strong> Wenn ihr Objekte dupliziert und anstatt mit der <code>linken Maustaste</code> die Position zu bestätigen die <code>rechte Maustaste</code> verwendet um den Vorgang abzubrechen, habt ihr das Duplizieren nicht abgebrochen, sondern die Objekte an die selbe Position dupliziert, wie die ursprünglichen Objekte. Dadurch entsteht schnell doppelte Geometrie, die man unbedingt vermeiden sollte. Wenn ihr den Vorgang des Duplizierens rückgängig machen wollt, drückt stattdessen <code>Strg + Z</code> nachdem ihr bestätigt habt.</p>
+</blockquote>
+<ul>
+<li>Verteilt beliebig viele Fenster auf dem U-Boot.</li>
+</ul>
+<p><img src="img/windows.gif" alt="windows"></p>
+<h2 id="4-details">4. Details</h2>
+<p><img src="img/smooth.png" alt="smooth"></p>
+<ul>
+<li>
+<p>Modelliert aus Grundobjekten ein Teleskop <!-- raw HTML omitted -->1<!-- raw HTML omitted -->.</p>
+</li>
+<li>
+<p>Nutzt die Grundobjekte, um dem U-Boot weitere Details hinzuzufügen.</p>
+</li>
+</ul>
+<blockquote>
+<p>Vom <a href="https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/control/orientations.html#orientations">globalen ins lokale Koordinatensystem</a> zu wechseln kann manchmal sehr hilfreich sein, um z.b. einen Zylinder in die Richtung zu verschieben, in die er gedreht ist.</p>
+</blockquote>
+<ul>
+<li>
+<p>Um Kanten von Objekte weicher darzustellen (z.b. den Rumpf), selektiert diese und wählt <em><strong>Rechtsklick → Shade Smooth</strong></em> aus <!-- raw HTML omitted -->2<!-- raw HTML omitted -->.</p>
+</li>
+<li>
+<p>Bei Objekten, die sowohl harte, als auch weiche Kanten haben (z.b. ZYlinder), kann zusätzlich im <em><strong>Properties Editor → Object Data Properties → Normals → Auto Smooth</strong></em> aktiviert werden <!-- raw HTML omitted -->3<!-- raw HTML omitted -->.</p>
+</li>
+</ul>
+<h2 id="5-hierarchie">5. Hierarchie</h2>
+<ul>
+<li>Erstellt wie in 3.1 unten beschrieben eine sinnvolle Hierarchie für euer U-Boot. Es soll zum Beispiel möglich sein die Teleskopstange zu drehen, so dass sich der Teleskopkopf mitdreht.</li>
+<li>Für dieses Beispiel wurde folgende Hierarchie gewählt:</li>
+</ul>
+<hr>
+<ul>
+<li>rumpf
+<ul>
+<li>fenster_rumpf.001
+<ul>
+<li>fenster_rumpf_scheibe.001</li>
+</ul>
+</li>
+<li>fenster_rumpf.002&hellip;</li>
+<li>auguck_unten</li>
+<li>auguck_oben
+<ul>
+<li>teleskop_stange
+<ul>
+<li>teleskop_kopf</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>schraube_rahmen
+<ul>
+<li>schraube
+-&hellip;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-farbe">6. Farbe</h2>
+<p><img src="img/color.png" alt="color"></p>
+<ul>
+<li>
+<p>Wechselt die <em><strong>Viewport-Shading</strong></em> Methode auf <em><strong>Material Preview</strong></em> <!-- raw HTML omitted -->1<!-- raw HTML omitted -->, damit die Materialien der Objekte richtig angezeigt werden.</p>
+</li>
+<li>
+<p>Selektiert ein Objekt, dass eingefärbt werden soll und wählt im <em><strong>Properties Editor</strong></em> den <em><strong>Material</strong></em> Tab aus <!-- raw HTML omitted -->2<!-- raw HTML omitted -->.</p>
+</li>
+<li>
+<p>Fügt nun hier dem Objekt mit Klick auf das <em><strong>+</strong></em> <!-- raw HTML omitted -->3<!-- raw HTML omitted -->  einen neuen Materialslot hinzu.</p>
+</li>
+<li>
+<p>Diesem Materialslot muss nun ein Material zugewiesen werden. Da wir noch keine Materialien erstellt haben, klickt auf <em><strong>New</strong></em> und gebt dem Material gleich einen sinnvollen Namen <!-- raw HTML omitted -->4<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Zunächst wollen wir nur die Grundfarbe des Materials - also <strong>Base Color</strong> verändern. Wählt hier eine Farbe nach eurem Belieben aus <!-- raw HTML omitted -->5<!-- raw HTML omitted -->.</p>
+</li>
+<li>
+<p>Färbt so all eure Objekte ein. Einmal erstellt kann ein Material auch auf mehrere Objekte angewandt werden, indem z.b. das Materialicon neben dessen Namen per Drag &amp; Drop auf andere Objekte im 3D-Viewport oder im Outliner gezogen wird.</p>
+</li>
+</ul>
+<p><img src="img/drop_material.gif" alt="color"></p>
+<ul>
+<li><strong>Freiwillig:</strong> Experimentiert mit den anderen Materialeigenschaften außer <em>Base Color</em> und wendet sie entsprechend an</li>
+</ul>
+<h2 id="aufgabe">Aufgabe</h2>
+<p><img src="img/ergebnis.gif" alt=""></p>
+<ul>
+<li>Stellt euer U-Boot mit Fenstern, Teleskop und weiteren Details fertig</li>
+<li>Benennt alle Objekte und erstellt eine sinnvolle Hierarchie</li>
+<li>Färbt alle Bestandteile des U-Boots ein</li>
+<li><strong>Die Abgabe besteht aus einem Screenshot des U-Boots, sowie der .blend Datei.</strong></li>
+</ul>
+<h2 id="ressourcen--tutorials-zum-thema">Ressourcen &amp; Tutorials zum Thema</h2>
+<table>
+<thead>
+<tr>
+<th>Art/Länge</th>
+<th>Titel</th>
+<th>Thema</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><!-- raw HTML omitted --> je 2-10min</td>
+<td><a href="https://www.youtube.com/watch?v=MF1qEhBSfq4&amp;list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6"><strong>Blender 2.8 Fundamentals</strong></a></td>
+<td>Interface &amp; Basics</td>
+<td><a href="https://www.youtube.com/channel/UCSMOQeBJ2RAnuFungnQOxLg">YouTube - Blender (offizieller Kanal)</a></td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted --> 26:00</td>
+<td><a href="https://youtu.be/hrH4Rzmb8Jg"><strong>Blender 2.8 Beginner Tutorial - Part 2: Interface &amp; Navigation</strong></a></td>
+<td>Interface &amp; Basics</td>
+<td><a href="https://www.youtube.com/channel/UCWWybvw9jnpOdJq_6wTHryA">YouTube - CG Boost</a></td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted --> 14:30</td>
+<td><a href="https://youtu.be/TPrnSACiTJ4"><strong>Beginner Blender Tutorial - Part 1</strong></a></td>
+<td>Interface &amp; Basics</td>
+<td><a href="https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g">YouTube - Blenderguru</a></td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted --></td>
+<td><a href="https://docs.blender.org/manual/en/latest/index.html"><strong>Blender Reference Manual</strong></a></td>
+<td>Offizielle Blender Dokumentation</td>
+<td></td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted --></td>
+<td><a href="https://blenderartists.org/c/support/basics-interface"><strong>blenderartists.org - Support</strong></a></td>
+<td>Größtes Blender Forum (englisch) für Fragen und Support</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="gelerntes">Gelerntes</h2>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Kontext</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alles Auswählen</td>
+<td>Object Mode</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Löschen</td>
+<td>Object Mode</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Objekte Einfügen</td>
+<td>Object Mode</td>
+<td>Shift + A</td>
+</tr>
+<tr>
+<td>Sidebar anzeigen</td>
+<td>Object Mode</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Translate</td>
+<td>Object Mode</td>
+<td>G</td>
+</tr>
+<tr>
+<td>Skalieren</td>
+<td>Object Mode</td>
+<td>S</td>
+</tr>
+<tr>
+<td>Rotieren</td>
+<td>Object Mode</td>
+<td>R</td>
+</tr>
+<tr>
+<td>Achsenwahl</td>
+<td>Object Mode</td>
+<td>X, Y, Z</td>
+</tr>
+<tr>
+<td>Duplizieren (Instanzieren)</td>
+<td>Object Mode</td>
+<td>Alt + D</td>
+</tr>
+<tr>
+<td>Zur Auswahl hinzufügen</td>
+<td>Object Mode</td>
+<td>Shift + Auswahl</td>
+</tr>
+</tbody>
+</table>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+

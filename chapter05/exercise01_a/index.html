@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="de">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Übung 5.1 - Ein Fisch und UV Editing - Computergrafik</title>
+    <meta name="generator" content="Hugo 0.91.2" />
+
+    
+    <meta name="description" content="Online-Material zum Fach Computergrafik.">
+    
+    <link rel="canonical" href="general/chapter05/exercise01_a/">
+    
+
+    <meta property="og:url" content="general/chapter05/exercise01_a/">
+    <meta property="og:title" content="Computergrafik">
+    <meta property="og:image" content="general/images/lecture_logo_cg.png">
+    <meta name="apple-mobile-web-app-title" content="Computergrafik">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="general/images/lecture_icon.png">
+    <link rel="icon" type="image/x-icon" href="general/images/lecture_icon.png">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('general/fonts/icon.eot');
+        src: url('general/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('general/fonts/icon.woff')
+               format('woff'),
+             url('general/fonts/icon.ttf')
+               format('truetype'),
+             url('general/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="general/stylesheets/application.css">
+    <link rel="stylesheet" href="general/stylesheets/temporary.css">
+    <link rel="stylesheet" href="general/stylesheets/palettes.css">
+    <link rel="stylesheet" href="general/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="general/stylesheets/custom.css">
+    
+    <script src="general/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-light-green palette-accent-lime">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Übung 5.1 - Ein Fisch und UV Editing
+      </div>
+    </div>
+
+    
+
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="general/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="general/images/lecture_logo_cg.png">
+        </div>
+      
+      <div class="name">
+        <strong>Computergrafik </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Allgemeines" href="general/">
+	
+	Allgemeines
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 1</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="1.0 - Lektion - Blender" href="general/chapter01/lecture01/">
+	
+	1.0 - Lektion - Blender
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="1.1 - Übung - Intro" href="general/chapter01/exercise01_b/">
+	
+	1.1 - Übung - Intro
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 2</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="2.0 - Lektion - Einfaches Modelling" href="general/chapter02/lecture01/">
+	
+	2.0 - Lektion - Einfaches Modelling
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="2.1 - Übung - Polygonal Modeling" href="general/chapter02/exercise01_b/">
+	
+	2.1 - Übung - Polygonal Modeling
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 3</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="3.0 - Lektion - Geometrie verstehen" href="general/chapter03/lecture01/">
+	
+	3.0 - Lektion - Geometrie verstehen
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="3.1 - Übung - Box Modeling" href="general/chapter03/exercise01_b">
+	
+	3.1 - Übung - Box Modeling
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="3.2 - Übung - Scultping*" href="general/chapter03/exercise02_b/">
+	
+	3.2 - Übung - Scultping*
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 4</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="4 - Lektion - Shading &amp; Rendering" href="general/chapter04/lecture01/">
+	
+	4 - Lektion - Shading &amp; Rendering
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="4.1 - Übung - Shading" href="general/chapter04/exercise01_b/">
+	
+	4.1 - Übung - Shading
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="4.2 - Übung - Licht &amp; Rendering" href="general/chapter04/exercise02_b/">
+	
+	4.2 - Übung - Licht &amp; Rendering
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 5</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="5 - Lektion - Materialien &amp; Texturen" href="general/chapter05/lecture01/">
+	
+	5 - Lektion - Materialien &amp; Texturen
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="5.1 - Übung - UV Editing" href="general/chapter05/exercise01_b/">
+	
+	5.1 - Übung - UV Editing
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="5.2 - Übung - Texture Painting" href="general/chapter05/exercise02_b/">
+	
+	5.2 - Übung - Texture Painting
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 6</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="6 - Lektion - Animation" href="general/chapter06/lecture01/">
+	
+	6 - Lektion - Animation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="6 - Übung - Katapulbelagerung" href="general/chapter06/exercise01_b/">
+	
+	6 - Übung - Katapulbelagerung
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 7</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="7.1 - Übung - Rigging" href="general/chapter07/exercise01_b/">
+	
+	7.1 - Übung - Rigging
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="7.2 - Übung - Partikel &amp; Feuer" href="general/chapter07/exercise02_b/">
+	
+	7.2 - Übung - Partikel &amp; Feuer
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">FELIX</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/4046684375">
+	
+	Ergebnisse einreichen
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Übung 5.1 - Ein Fisch und UV Editing </h1>
+
+			<p><strong>In der folgenden Aufgabe werden wir einen Fisch modellieren und texturieren. Als Beispiel wird in dieser Aufgabe ein Clownfisch modelliert verwendet, die Wahl der Fischart steht euch jedoch offen</strong></p>
+<h2 id="1-vorbereitung">1. Vorbereitung</h2>
+<ul>
+<li>Sucht die Seitenansicht eines Fisches eurer Wahl im Internet oder verwendet <a href="img/clownfisch.jpg">dieses</a> Beispielbild:</li>
+</ul>
+<p><img src="img/clownfisch.jpg" alt="img"></p>
+<p><img src="img/01_reference.png" alt="img"></p>
+<ul>
+<li>
+<p>Erstellt eine neue Blender Szene</p>
+</li>
+<li>
+<p>Wecheselt in die Seitenansicht <!-- raw HTML omitted -->1<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>zieht das Bild per Drag &amp; Drop aus dem Dateiexplorer in die Blender Szene <!-- raw HTML omitted -->2<!-- raw HTML omitted --> und verschiebt es ca. in die Mitte der Szene.</p>
+</li>
+</ul>
+<h2 id="2-wiederholung-poly-modelling">2. Wiederholung Poly-Modelling</h2>
+<ul>
+<li>Selektiert euren Cube und benennt ihn entsprechend um.</li>
+</ul>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<ul>
+<li>
+<p>Verwendet wie in Übung 2 gelernt einen Mirror Modifier, damit ihr nur eine Hälfte des symmetrischen Fisches modellieren müsst.</p>
+</li>
+<li>
+<p>Löscht dazu eine Hälfte des Würfels und fügt den <strong>Mirror Modifier</strong>, sowie einen <strong>Subdivision Surface</strong> Modifier hinzu</p>
+</li>
+<li>
+<p>Stellt im Mirror Modifier <em>Clipping</em> an und verwendet 2-3 Stufen für den Subdivision Surfaces.</p>
+</li>
+<li>
+<p>Stellt <code>RMB</code> → <strong>Smooth Shading</strong> an</p>
+</li>
+</ul>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<ul>
+<li>Modelliert nun den Fisch grob dem Bild grob nach. Verwendet dazu die in den bisherigen Übungen gezeigten Tools.</li>
+</ul>
+<blockquote>
+<p><strong>Wiederhohlung der modelling Tools</strong> <!-- raw HTML omitted --></p>
+<ul>
+<li><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/duplicating/extrude.html"><strong>Extrude</strong> <code>E</code></a>
+<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/duplicating/inset.html"><strong>Inset</strong> <code>I</code></a>
+<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/subdividing/loop.html"><strong>Loop Cut</strong> <code>Strg + R</code></a>
+<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+</blockquote>
+<ul>
+<li>Hilfreich kann die <em><strong>Shading Dropdown → X-Ray</strong></em> Ansicht sein, um durch das Mesh hindurch das Referenzbild zu sehen.</li>
+</ul>
+<p>Das Modellieren ist nicht Hauptfokus dieser Aufgabe - der Fisch muss nicht perfekt sein. Notfalls - wenn der Rest der Aufgabe mit eurem Modell gar nicht klappt, darf auch <a href="resources/fisch.blend">dieses Modell</a> für den Rest der Aufgabe verwendet werden.</p>
+<h2 id="3-uv-nähte-markieren">3. UV Nähte markieren</h2>
+<p><em>Für den Fisch soll nun eine sogenannte UV-Map erstellt werden, die dafür sorgt, dass 2D Texturen auf einem 3D Objekt dargestellt werden können.</em></p>
+<h3 id="31-uv-grid-textur">3.1 UV-Grid Textur</h3>
+<p><img src="img/04_uv-grid.png" alt="img"></p>
+<ul>
+<li>
+<p>Wechselt in den Texture Paint Workspace <!-- raw HTML omitted -->1<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Fügt unter <strong>Texture Slots</strong> eine neue UV-Grid Textur als &ldquo;Base Color&rdquo; hinzu <!-- raw HTML omitted -->2<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Stellt die Auflösung auf die gewünschte Größe (z.b. 2048x2048) und wählt als Typ <em>UV-Grid</em> aus</p>
+</li>
+</ul>
+<p><img src="img/uv-grid-dialog.png" alt="img"></p>
+<ul>
+<li>
+<p>Klickt einmal auf den neuen Texturslot, um die Textur anzuzeigen</p>
+</li>
+<li>
+<p><strong>WICHTIG!!</strong> Speichert die <em>Base Color</em> Textur links im Image Editor sofort ab. (<em><strong>Image → Save As&hellip;</strong></em>)</p>
+</li>
+</ul>
+<blockquote>
+<p>Diese einfache Karomuster-Textur dient uns später als Hilfe, um Verzerrungen in der Texturprojektion zu erkennen.</p>
+</blockquote>
+<ul>
+<li>Wechselt in den <em>UV Editing</em> Workspace</li>
+</ul>
+<p><img src="img/03_uv-editing.png" alt="03"></p>
+<ul>
+<li>
+<p>Wechselt in den <strong>UV-Editing</strong> Workspace <!-- raw HTML omitted -->1<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Stellt die Ansicht auf <strong>Material Preview</strong> um (im Header mit Mausrad scrollen oder <code>Z</code>)</p>
+</li>
+<li>
+<p>Stellt den Selektionsmodus auf <em>Kanten</em> (<code>2</code>)<!-- raw HTML omitted -->2<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>stellt beim Subdivision Surface Modifier die <strong>On Cage</strong> Option an, damit die Kanten auf dem Mesh besser angezeigt werden.<!-- raw HTML omitted -->3<!-- raw HTML omitted --></p>
+</li>
+</ul>
+<p><img src="img/mark-seam.png" alt="img"></p>
+<ul>
+<li>
+<p>Legt Kanten fest an denen die Kanten der UV Map liegen sollen. Wählt dazu im Editmode eine/mehrere Kanten aus (vorher <code>2</code> drücken, um den Selektionsmodus auf Kanten umzustellen) und drückt Rechtsklick oder <code>U</code>. Wählt im erscheinendem Menü <em>Mark Seam</em> aus. Die so markierten Kanten werden <!-- raw HTML omitted -->rot<!-- raw HTML omitted --> hervorgehoben.</p>
+</li>
+<li>
+<p>Wollt ihr markierte Nähte wieder löschen, kommt die Option <em>Clear Seam</em> unter <em>Mark Seam</em> zum Einsatz.</p>
+</li>
+</ul>
+<blockquote>
+<p>Die UV Map kann man sich vorstellen wie z.b. ein Schnittplan für ein Kleidungsstück, das wir dem 3D Körper anziehen. Die Kanten die mit Mark Seam markiert wurden sind hierbei die Nähte.<!-- raw HTML omitted --><!-- raw HTML omitted -->
+<img src="img/cube_unfolding.gif" alt="img"></p>
+</blockquote>
+<p><img src="img/seams.png" alt="img"></p>
+<p>Nähte sollten auf jeden Fall um die Flossen herum markiert werden, sowie bei seitlich abstehenden Flossen eine Naht von der umschließenden Naht bis zur Flossenspitze. In der Mitte des Fisches wäre normalerweise auch eine Naht nötig, der Mirror Modifier erzeugt diese jedoch sowieso automatisch. Es soll gedanklich möglich sein, den Fisch mit an den Nähten ausgeschnittenen Papierstücken möglichst verzerrungsfrei zu basteln.</p>
+<h2 id="4-unwraping-und-uv-editing">4. Unwraping und UV Editing</h2>
+<p><img src="img/05_unwrap.png" alt="04"></p>
+<ul>
+<li>
+<p>Wählt im Editmodus den gesamten Fisch aus und drückt <code>U</code>. Wählt im erscheinenden Menü <em>Unwrap</em> aus.</p>
+</li>
+<li>
+<p>Im UV Editor links sollte nun das Mesh des Fisches als 2D Netz sichtbar sein und Karos der Textur sollten auf dem Fisch erscheinen.</p>
+</li>
+<li>
+<p>Sind die Karos stark verzerrt, markiert (wie in Schritt 2 beschrieben) weitere Kanten die euch wichtig erscheinen und Unwraped den Fisch erneut mit <code>U</code>.</p>
+</li>
+<li>
+<p>Falls nötig, schiebt, skaliert und rotiert die sogen. <em>UV-Islands</em> (zusammenhängende Teile der UV Map) die im Image Editor entstanden sind nun so, dass die Kästchen überall auf dem Fisch etwa gleich groß sind und möglichst effizient die Textur ausfüllen. Sie sollten sich an keiner Stelle überschneiden.</p>
+</li>
+<li>
+<p>Die Selektionswerkzeuge funktionieren gleich, wie in der 3D-Ansicht. Mit <code>L</code> werden unter der Maus zusammenhängende Teile der UV-Map selektiert</p>
+</li>
+<li>
+<p>Angezeigt im UV Editor werden immer nur die Teile des Meshes, die im 3D Viewport markiert sind.</p>
+</li>
+</ul>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<blockquote>
+<p>Die Auswahl und Transformationswerkzeuge funktionieren im UV Editor gleich, wie im Editmode des 3D Viewports.</p>
+</blockquote>
+<h2 id="aufgabe">Aufgabe</h2>
+<p><img src="img/result.png" alt="04"></p>
+<ul>
+<li>
+<p>Modelliert den Fisch und bereitet ihn mittles UV Editing so vor, dass die Karos <em>Checker Textur</em> gleichmäßig und ohne Überlappungen auf dem Fisch dargestellt werden.</p>
+</li>
+<li>
+<p>Anweisungen für die Abgabe folgen in 5.2</p>
+</li>
+</ul>
+<h2 id="ressourcen--tutorials-zum-thema">Ressourcen &amp; Tutorials zum Thema</h2>
+<table>
+<thead>
+<tr>
+<th>Art/Länge</th>
+<th>Titel</th>
+<th>Thema</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><!-- raw HTML omitted --> 6:25</td>
+<td><a href="https://youtu.be/Y7M-B6xnaEM"><strong>UV Unwrapping - Blender 2.80 Fundamentals</strong></a></td>
+<td>Materialien</td>
+<td><a href="https://www.youtube.com/channel/UCSMOQeBJ2RAnuFungnQOxLg">YouTube - Blender (offizieller Kanal)</a></td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted --> 12:23</td>
+<td><a href="https://youtu.be/xPoxqOcUzNQ"><strong>Blender 2.8 Beginner Tutorial - Part 6: UV Unwrapping</strong></a></td>
+<td>UV-Editing</td>
+<td><a href="https://www.youtube.com/channel/UCWWybvw9jnpOdJq_6wTHryA">YouTube - CG Boost</a></td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted --> 30:00</td>
+<td><a href="https://youtu.be/bWPD2aEd8tY"><strong>20 Tips to Speed Up UV Mapping in Blender</strong></a></td>
+<td>UV-Editing</td>
+<td><a href="https://www.youtube.com/channel/UCWWybvw9jnpOdJq_6wTHryA">YouTube - CG Boost</a></td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted --></td>
+<td><a href="https://docs.blender.org/manual/en/latest/editors/uv/introduction.html"><strong>Blender Reference Manual - UV Introduction</strong></a></td>
+<td>UV Dokumentation</td>
+<td><a href="https://docs.blender.org/manual/en/latest/index.html">Blender Dokumentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="gelernte-shortcuts">gelernte Shortcuts</h2>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Kontext</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nähte festlegen (mark seam)</td>
+<td>Edit Mode</td>
+<td>U</td>
+</tr>
+<tr>
+<td>Unwrap</td>
+<td>Edit Mode</td>
+<td>U</td>
+</tr>
+<tr>
+<td>Zusamenhängende Teile selektieren</td>
+<td>Edit Mode / UV-Editor</td>
+<td>L</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
