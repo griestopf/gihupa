@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chapter08s on Computergrafik</title>
-    <link>general/chapter08/</link>
+    <link>/chapter08/</link>
     <description>Recent content in Chapter08s on Computergrafik</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate><atom:link href="general/chapter08/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate><atom:link href="/chapter08/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MIB 2. Semesterhälfte</title>
-      <link>general/chapter08/lecture01/</link>
+      <link>/chapter08/lecture01/</link>
       <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
-      <guid>general/chapter08/lecture01/</guid>
+      <guid>/chapter08/lecture01/</guid>
       <description>Diese Seite enthält Informationen und Inhalte zur zweiten Semesterhälfte des Fachs Computergrafik im Studiengang MIB.
 Allgemeines Studenten der Medieninformatik betrachten die in der ersten Semesterhälfte erlernten Kenntnisse über Computergrafik im Kontext der Echtzeit-3D-Programmierung, wie sie z.B. in Games zum Einsatz kommt. Kenntnisse über Geometrie, Transformationen, Hierarchien, Materialgebung, Texturierung usw. werden programmier-nahen Kontext und im Einsatzgebiet in einer 3D-Engine betrachtet.
 Aufbau der 2. Semesterhälfte Formal wird es weiterhin zu den Terminen der ersten Semesterhälfte Vorlesungen und Übungen geben.</description>
