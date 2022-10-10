@@ -13,8 +13,8 @@
       <pubDate>Sat, 04 Mar 2017 15:38:00 +0100</pubDate>
       
       <guid>/chapter06/lecture01/</guid>
-      <description>Inhalt  Pfad Animation Constraints Rigging Physik Simulation Shape Keys Partikel  1. Pfad Animation Sollen Objekte über die Zeit ihre Position ändern, kann die Position direkt mit Keyframes verändert werden. Oft ist es aber wünschenswert, den genauen Verlauf der Bewegung zu definieren. Hier hilft die Pfad-Animation mit deren Hilfe der Bewegungspfad direkt als Kurve im 3D-Editor eingezeichnet werden kann.
- Kurve Einfügen Einfügen mit Shift+A -&amp;gt; z.B. Bézier-Kurve. Kurve Editieren mit Befehlen analog zum Mesh-Editing:  Bézier-Kontroll- und -Tangentepunkte anfassen und verschieben durch RMB.</description>
+      <description>Inhalt Pfad Animation Constraints Rigging Physik Simulation Shape Keys Partikel 1. Pfad Animation Sollen Objekte über die Zeit ihre Position ändern, kann die Position direkt mit Keyframes verändert werden. Oft ist es aber wünschenswert, den genauen Verlauf der Bewegung zu definieren. Hier hilft die Pfad-Animation mit deren Hilfe der Bewegungspfad direkt als Kurve im 3D-Editor eingezeichnet werden kann.
+Kurve Einfügen Einfügen mit Shift+A -&amp;gt; z.B. Bézier-Kurve. Kurve Editieren mit Befehlen analog zum Mesh-Editing: Bézier-Kontroll- und -Tangentepunkte anfassen und verschieben durch RMB.</description>
     </item>
     
     <item>
@@ -24,8 +24,8 @@
       
       <guid>/chapter06/exercise01_b/</guid>
       <description>In dieser Übung wollen wir den Arm des in Übung 1 modellierten Katapults animieren und Physiksimulation nutzen, um ein Geschoss zu werfen.
-Vorbereitung   Öffnet euer Katapult. Falls ihr im Laufe der Übung feststellt, dass sich euer Modell nicht für die Aufgabe eignet, könnt ihr dieses Beispielmodell verwenden.
-  Da wir in dieser Übung mit Physik arbeiten, sind die richtigen Maße des Katapults wichtig. Öffnet dafür mit N die Sidebar.</description>
+Vorbereitung Öffnet euer Katapult. Falls ihr im Laufe der Übung feststellt, dass sich euer Modell nicht für die Aufgabe eignet, könnt ihr dieses Beispielmodell verwenden.
+Da wir in dieser Übung mit Physik arbeiten, sind die richtigen Maße des Katapults wichtig. Öffnet dafür mit N die Sidebar. Skaliert nun euer Katapult, bis es realistische Maße hat, die unter Dimensions für das aktive Objekt angezeigt werden.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ Vorbereitung   Öffnet euer Katapult. Falls ihr im Laufe der Übung feststellt, 
       
       <guid>/chapter06/exercise01_a/</guid>
       <description>In dieser Übung wollen wir das U-Boot aus Übung 1 animieren und Partikelsysteme nutzen, um Blasen zu erzeugen
-Vorbereitung  Öffnet euer U-Boot. Falls ihr im Laufe der Übung feststellt, dass sich euer Modell nicht für die Aufgabe eignet, könnt ihr dieses Beispielmodell verwenden.  1. Schiffsschraube 1.1 Schraube modellieren  Falls noch nicht geschehen, modelliert eine einfache Schiffsschraube für das U-Boot   Hilfreich ist hierfür, den Pivot-Point auf 3D Cursor zu stellen, um die drei einzelnen Rotorblätter je um 120° um diesen zu drehen.</description>
+Vorbereitung Öffnet euer U-Boot. Falls ihr im Laufe der Übung feststellt, dass sich euer Modell nicht für die Aufgabe eignet, könnt ihr dieses Beispielmodell verwenden. 1. Schiffsschraube 1.1 Schraube modellieren Falls noch nicht geschehen, modelliert eine einfache Schiffsschraube für das U-Boot Hilfreich ist hierfür, den Pivot-Point auf 3D Cursor zu stellen, um die drei einzelnen Rotorblätter je um 120° um diesen zu drehen.</description>
     </item>
     
   </channel>
