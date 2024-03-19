@@ -20,38 +20,28 @@
       <link>/chapter05/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter05/exercise01_a/</guid>
-      <description>In der folgenden Aufgabe werden wir einen Fisch modellieren und texturieren. Als Beispiel wird in dieser Aufgabe ein Clownfisch modelliert verwendet, die Wahl der Fischart steht euch jedoch offen
-1. Vorbereitung Sucht die Seitenansicht eines Fisches eurer Wahl im Internet oder verwendet dieses Beispielbild: Erstellt eine neue Blender Szene
-Wecheselt in die Seitenansicht 1
-zieht das Bild per Drag &amp;amp; Drop aus dem Dateiexplorer in die Blender Szene 2 und verschiebt es ca.</description>
+      <description>In der folgenden Aufgabe werden wir einen Fisch modellieren und texturieren. Als Beispiel wird in dieser Aufgabe ein Clownfisch modelliert verwendet, die Wahl der Fischart steht euch jedoch offen&#xA;1. Vorbereitung Sucht die Seitenansicht eines Fisches eurer Wahl im Internet oder verwendet dieses Beispielbild: Erstellt eine neue Blender Szene&#xA;Wecheselt in die Seitenansicht 1&#xA;zieht das Bild per Drag &amp;amp; Drop aus dem Dateiexplorer in die Blender Szene 2 und verschiebt es ca.</description>
     </item>
     <item>
       <title>Übung 5.1 - UV Editing</title>
       <link>/chapter05/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter05/exercise01_b/</guid>
-      <description>In der folgenden Aufgabe bereiten wir den Schild für die Texturierung vor. Dafür müssen wir Blender mitteilen, wie die 2D Textur auf das 3D Objekt projeziert werden soll. Dieser Vorgang wird UV-Editing genannt.
-1. Vorbereitung Öffnet euren zuvor modelliertes Schild. Alternativ kann auch dieses Modell verwendet werden.
-Selektiert den Schild
-Wechselt in den Texture Paint Workspace
-Fügt unter Texture Slots eine neue UV-Grid Textur als &amp;ldquo;Base Color&amp;rdquo; hinzu
-Stellt die Auflösung auf die gewünschte Größe (z.</description>
+      <description>In der folgenden Aufgabe bereiten wir den Schild für die Texturierung vor. Dafür müssen wir Blender mitteilen, wie die 2D Textur auf das 3D Objekt projeziert werden soll. Dieser Vorgang wird UV-Editing genannt.&#xA;1. Vorbereitung Öffnet euren zuvor modelliertes Schild. Alternativ kann auch dieses Modell verwendet werden.&#xA;Selektiert den Schild&#xA;Wechselt in den Texture Paint Workspace&#xA;Fügt unter Texture Slots eine neue UV-Grid Textur als &amp;ldquo;Base Color&amp;rdquo; hinzu&#xA;Stellt die Auflösung auf die gewünschte Größe (z.</description>
     </item>
     <item>
       <title>Übung 5.2 - Texture Painting</title>
       <link>/chapter05/exercise02_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter05/exercise02_a/</guid>
-      <description>Nun, da wir den Fisch in 5.1 für die Texturierung vorbereitet haben, können wir ihm Farbe und Struktur geben.
-1. Vorbereitung Öffnet euren in der vorherigen Aufgabe vorbereiteten Fisch Selektiert den Fisch Wechselt in den Texture Paint Workspace 2. Farbe 2.1 Optional: Schuppentextur Sucht im Internet - z.b. auf texturehaven.com oder textureninja.com nach einer möglichst neutral gefärbten Schuppentextur. Alternativ kann auch diese Textur verwendet werden. Fügt im Reiter Texture eine neue Pinsel-Textur hinzu Wechselt zum Texture Tab des Properties Editors und öffnet für die nun markierte Brush-Textur die zuvor heruntergeladene Schuppentextur aus.</description>
+      <description>Nun, da wir den Fisch in 5.1 für die Texturierung vorbereitet haben, können wir ihm Farbe und Struktur geben.&#xA;1. Vorbereitung Öffnet euren in der vorherigen Aufgabe vorbereiteten Fisch Selektiert den Fisch Wechselt in den Texture Paint Workspace 2. Farbe 2.1 Optional: Schuppentextur Sucht im Internet - z.b. auf texturehaven.com oder textureninja.com nach einer möglichst neutral gefärbten Schuppentextur. Alternativ kann auch diese Textur verwendet werden. Fügt im Reiter Texture eine neue Pinsel-Textur hinzu Wechselt zum Texture Tab des Properties Editors und öffnet für die nun markierte Brush-Textur die zuvor heruntergeladene Schuppentextur aus.</description>
     </item>
     <item>
       <title>Übung 5.2 - Texture Painting</title>
       <link>/chapter05/exercise02_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter05/exercise02_b/</guid>
-      <description>Nun, da wir den Schild in 5.1 für die Texturierung vorbereitet haben, können wir ihm Farbe und Struktur geben.
-1. Vorbereitung Öffnet euren in der vorherigen Aufgabe vorbereiteten Schild Selektiert den Schild Wechselt in den Texture Paint Workspace 2. Farbe Sucht im Internet - z.b. auf texturehaven.com oder textureninja.com nach einer Holztextur. Stehen beim Download mehrere Texturarten zur Auswahl, braucht ihr für die Farbe nur Diffuse bzw. Albedo. Alternativ kann auch diese Textur verwendet werden.</description>
+      <description>Nun, da wir den Schild in 5.1 für die Texturierung vorbereitet haben, können wir ihm Farbe und Struktur geben.&#xA;1. Vorbereitung Öffnet euren in der vorherigen Aufgabe vorbereiteten Schild Selektiert den Schild Wechselt in den Texture Paint Workspace 2. Farbe Sucht im Internet - z.b. auf texturehaven.com oder textureninja.com nach einer Holztextur. Stehen beim Download mehrere Texturarten zur Auswahl, braucht ihr für die Farbe nur Diffuse bzw. Albedo. Alternativ kann auch diese Textur verwendet werden.</description>
     </item>
   </channel>
 </rss>

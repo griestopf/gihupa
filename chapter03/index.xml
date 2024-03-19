@@ -13,42 +13,35 @@
       <link>/chapter03/lecture01/</link>
       <pubDate>Sat, 04 Mar 2017 15:38:00 +0100</pubDate>
       <guid>/chapter03/lecture01/</guid>
-      <description>Inhalt Topologie Geometrie from Scratch Edge Flow Editor-Anordnung 1. Topologie Das Verhältnis zwischen Punkten, Kanten und Flächen, also die Zuordnung, welcher Eckpunkt mit welchem anderen eine Kante bildet und welche Kante mit welchen anderen Kanten eine Fläche Bildet, nennen wir im Folgenden Topologie.
-Die im letzten Kapitel gezeigten Modellierungstechniken verändern entweder die Topologie gar nicht (Position, Rotation, Skalierung auf Selektionen von Punkten, Kanten oder Flächen) oder aber sie erzeugen nach festen Regeln neue Topologie und haben ein &amp;ldquo;konsistentes&amp;rdquo; Mesh zur Folge (Bevel, Extrude, Loop-Cut, diverse Modifier).</description>
+      <description>Inhalt Topologie Geometrie from Scratch Edge Flow Editor-Anordnung 1. Topologie Das Verhältnis zwischen Punkten, Kanten und Flächen, also die Zuordnung, welcher Eckpunkt mit welchem anderen eine Kante bildet und welche Kante mit welchen anderen Kanten eine Fläche Bildet, nennen wir im Folgenden Topologie.&#xA;Die im letzten Kapitel gezeigten Modellierungstechniken verändern entweder die Topologie gar nicht (Position, Rotation, Skalierung auf Selektionen von Punkten, Kanten oder Flächen) oder aber sie erzeugen nach festen Regeln neue Topologie und haben ein &amp;ldquo;konsistentes&amp;rdquo; Mesh zur Folge (Bevel, Extrude, Loop-Cut, diverse Modifier).</description>
     </item>
     <item>
       <title>Übung 3.1 - Subdivision Surface Modeling</title>
       <link>/chapter03/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter03/exercise01_a/</guid>
-      <description>Box Modeling Im folgenden Kapitel behandeln wir eine Modelliertechnik, die Subdivision Surface Modeling genannt wird. Es handelt sich hierbei grundsätzlich um Box-Modeling, da wir durch Extrudieren einer Box einen &amp;ldquo;Käfig&amp;rdquo; (=Control Cage) modellieren und damit ein Subdivision Surface kontrollieren (siehe Subdivision Surface Modifier).
-Im Verlauf der Übung werden wir für unsere Unterwasserszene ein paar Korallen und einen Fisch modellieren.
-1. Modifier 1.1 Subdivision Surface Öffnet eine neue Blender-Szene Fügt dem Würfel im Modifier Tab der Properties Editors einen Subdivision Surface Modifier hinzu 1 und stellt die Subdivisions vorerst auf 4 (2) .</description>
+      <description>Box Modeling Im folgenden Kapitel behandeln wir eine Modelliertechnik, die Subdivision Surface Modeling genannt wird. Es handelt sich hierbei grundsätzlich um Box-Modeling, da wir durch Extrudieren einer Box einen &amp;ldquo;Käfig&amp;rdquo; (=Control Cage) modellieren und damit ein Subdivision Surface kontrollieren (siehe Subdivision Surface Modifier).&#xA;Im Verlauf der Übung werden wir für unsere Unterwasserszene ein paar Korallen und einen Fisch modellieren.&#xA;1. Modifier 1.1 Subdivision Surface Öffnet eine neue Blender-Szene Fügt dem Würfel im Modifier Tab der Properties Editors einen Subdivision Surface Modifier hinzu 1 und stellt die Subdivisions vorerst auf 4 (2) .</description>
     </item>
     <item>
       <title>Übung 3.1 - Subdivision Surface Modeling</title>
       <link>/chapter03/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter03/exercise01_b/</guid>
-      <description>Box Modeling Im folgenden Kapitel behandeln wir eine Modelliertechnik, die Subdivision Surface Modeling genannt wird. Es handelt sich hierbei grundsätzlich um Box-Modeling, da wir durch Extrudieren einer Box einen &amp;ldquo;Käfig&amp;rdquo; (=Control Cage) modellieren und damit ein Subdivision Surface kontrollieren (siehe Subdivision Surface Modifier).
-Diese Methode ist wie das Formen von Knete (deshalb auch manchmal &amp;ldquo;Clay Modeling&amp;rdquo; genannt) und eignet sich besonders zur Erstellung organischer Modelle. Um die Arbeitsweise anschaulich zu erklären nutzen wir das Beispiel eines Drachen.</description>
+      <description>Box Modeling Im folgenden Kapitel behandeln wir eine Modelliertechnik, die Subdivision Surface Modeling genannt wird. Es handelt sich hierbei grundsätzlich um Box-Modeling, da wir durch Extrudieren einer Box einen &amp;ldquo;Käfig&amp;rdquo; (=Control Cage) modellieren und damit ein Subdivision Surface kontrollieren (siehe Subdivision Surface Modifier).&#xA;Diese Methode ist wie das Formen von Knete (deshalb auch manchmal &amp;ldquo;Clay Modeling&amp;rdquo; genannt) und eignet sich besonders zur Erstellung organischer Modelle. Um die Arbeitsweise anschaulich zu erklären nutzen wir das Beispiel eines Drachen.</description>
     </item>
     <item>
       <title>Übung 3.2 - Sculpting</title>
       <link>/chapter03/exercise02_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter03/exercise02_a/</guid>
-      <description>Sculpting Das folgende Kapitel gibt einen kurzen Überblick zu Sculpting. Mit Sculpting lassen sich sehr schöne Details erarbeiten. Als Beispiel nutzen wir den groben, mit Clay-Modelling erstellten Drachen aus der vorherigen Übung.
-1. Vorbereitung Öffnet euren Drachen. Dupliziert ihn mit Shift + D und blendet das Duplikat im Outliner (1) oder mit H aus. Wendet euren Subdivision Surface nun an indem ihr auf apply (1) drückt. Fügt eurem Drachen einen Multiresolution-Modifier hinzu und klickt zwei mal auf Subdivide.</description>
+      <description>Sculpting Das folgende Kapitel gibt einen kurzen Überblick zu Sculpting. Mit Sculpting lassen sich sehr schöne Details erarbeiten. Als Beispiel nutzen wir den groben, mit Clay-Modelling erstellten Drachen aus der vorherigen Übung.&#xA;1. Vorbereitung Öffnet euren Drachen. Dupliziert ihn mit Shift + D und blendet das Duplikat im Outliner (1) oder mit H aus. Wendet euren Subdivision Surface nun an indem ihr auf apply (1) drückt. Fügt eurem Drachen einen Multiresolution-Modifier hinzu und klickt zwei mal auf Subdivide.</description>
     </item>
     <item>
       <title>Übung 3.2 - Sculpting*</title>
       <link>/chapter03/exercise02_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter03/exercise02_b/</guid>
-      <description>*Die Bearbeitung dieser Aufgabe ist freiwillig!
-Sculpting Das folgende Kapitel gibt einen kurzen Überblick zu Sculpting. Mit Sculpting lassen sich sehr schöne Details erarbeiten. Als Beispiel nutzen wir den groben, mit Clay-Modelling erstellten Drachen aus der vorherigen Übung.
-1. Vorbereitung Öffnet euren Drachen. Dupliziert ihn mit Shift + D und blendet das Duplikat im Outliner (1) oder mit H aus. Wendet euren Subdivision Surface nun an indem ihr auf apply (1) drückt.</description>
+      <description>*Die Bearbeitung dieser Aufgabe ist freiwillig!&#xA;Sculpting Das folgende Kapitel gibt einen kurzen Überblick zu Sculpting. Mit Sculpting lassen sich sehr schöne Details erarbeiten. Als Beispiel nutzen wir den groben, mit Clay-Modelling erstellten Drachen aus der vorherigen Übung.&#xA;1. Vorbereitung Öffnet euren Drachen. Dupliziert ihn mit Shift + D und blendet das Duplikat im Outliner (1) oder mit H aus. Wendet euren Subdivision Surface nun an indem ihr auf apply (1) drückt.</description>
     </item>
   </channel>
 </rss>

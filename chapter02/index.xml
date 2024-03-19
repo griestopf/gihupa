@@ -13,26 +13,21 @@
       <link>/chapter02/lecture01/</link>
       <pubDate>Sat, 04 Mar 2017 15:38:00 +0100</pubDate>
       <guid>/chapter02/lecture01/</guid>
-      <description>Inhalt Der Edit-Mode Modifier Mirror Boolean Subdivision Surface Clay Modelling 1. Der Edit-Mode Bausteine der 3D-Geometrie (Polytope) Der 3D Viewport hat verschiedene Object Interaction Modes (rot) mit denen sich z.B. im Object Mode (Default) auf oberster Ebene Objekte (Meshes, Lights, Cameras etc.) in der Szene manipulieren lassen, wie wir es bereits bei der ersten Übung kennengelernt haben.
-Im Edit Mode von Blender kann die Geometrie einzelner Objekte verändert bzw. &amp;ldquo;modelliert&amp;rdquo; werden.</description>
+      <description>Inhalt Der Edit-Mode Modifier Mirror Boolean Subdivision Surface Clay Modelling 1. Der Edit-Mode Bausteine der 3D-Geometrie (Polytope) Der 3D Viewport hat verschiedene Object Interaction Modes (rot) mit denen sich z.B. im Object Mode (Default) auf oberster Ebene Objekte (Meshes, Lights, Cameras etc.) in der Szene manipulieren lassen, wie wir es bereits bei der ersten Übung kennengelernt haben.&#xA;Im Edit Mode von Blender kann die Geometrie einzelner Objekte verändert bzw. &amp;ldquo;modelliert&amp;rdquo; werden.</description>
     </item>
     <item>
       <title>Übung 2.1 - Polygonal Modeling</title>
       <link>/chapter02/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter02/exercise01_a/</guid>
-      <description>Der Edit-Mode Im folgenden Kapitel werden die Grundlagen des Modellierens erläutert. Dazu erstellen wir eine Schatztruhe.
-1. Vorbereitung Erstellt ein neues Blender-File. Wechselt jetzt ins Modeling Workspace 1.
-Beim Wechsel zum Modeling Workspace wird bereits automatisch der Edit Mode aktiviert. Um zwischen Edit Mode und Object Mode zu wechseln könnt ihr das Interaction Mode Menu 2 oder den Shortcut Tab nutzen.
-Im Editmode kann nun die tatsächliche Geometrie von Objekten verändert werden</description>
+      <description>Der Edit-Mode Im folgenden Kapitel werden die Grundlagen des Modellierens erläutert. Dazu erstellen wir eine Schatztruhe.&#xA;1. Vorbereitung Erstellt ein neues Blender-File. Wechselt jetzt ins Modeling Workspace 1.&#xA;Beim Wechsel zum Modeling Workspace wird bereits automatisch der Edit Mode aktiviert. Um zwischen Edit Mode und Object Mode zu wechseln könnt ihr das Interaction Mode Menu 2 oder den Shortcut Tab nutzen.&#xA;Im Editmode kann nun die tatsächliche Geometrie von Objekten verändert werden</description>
     </item>
     <item>
       <title>Übung 2.1 - Polygonal Modeling</title>
       <link>/chapter02/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter02/exercise01_b/</guid>
-      <description>Wichtiger Hinweis Die Abgabe für diese Übung besteht aus zwei Teilen: der Schilder und einem Schwert! Lesen Sie dazu unten den Absatz &amp;ldquo;Aufgabe&amp;rdquo;. Der Edit-Mode Im folgenden Kapitel werden die Grundlagen des Modellierens erläutert. Dazu erstellen wir einen mittelalterlichen Schild. Die Arbeitsweise des steigenden Detailgrades und der Aufbau eines 3D-Meshs sind besonders zu beachten.
-1. Vorbereitung Erstellt ein neues Blender-File. Löscht alle Objekte bis auf den Würfel, indem ihr mit A alles auswählt, mit gedrückter Shift-Taste auf den Würfel klickt und anschließend mit X alle ausgewählten Objekte löscht.</description>
+      <description>Wichtiger Hinweis Die Abgabe für diese Übung besteht aus zwei Teilen: der Schilder und einem Schwert! Lesen Sie dazu unten den Absatz &amp;ldquo;Aufgabe&amp;rdquo;. Der Edit-Mode Im folgenden Kapitel werden die Grundlagen des Modellierens erläutert. Dazu erstellen wir einen mittelalterlichen Schild. Die Arbeitsweise des steigenden Detailgrades und der Aufbau eines 3D-Meshs sind besonders zu beachten.&#xA;1. Vorbereitung Erstellt ein neues Blender-File. Löscht alle Objekte bis auf den Würfel, indem ihr mit A alles auswählt, mit gedrückter Shift-Taste auf den Würfel klickt und anschließend mit X alle ausgewählten Objekte löscht.</description>
     </item>
   </channel>
 </rss>

@@ -20,25 +20,21 @@
       <link>/chapter04/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter04/exercise01_b/</guid>
-      <description>In der folgenden Übung werden wir unserem Schwert Materialien geben und zum Rendern in Szene setzen. Das Schild wird in Übung 5 dazukommen.
-1. Vorbereitung Öffnet das in Übung 2 modellierte Schwert. Alternativ kann auch dieses Modell verwendet werden. Wechselt in den Shading Workspace Nun haben sich einige neue Bereiche geöffnet:
-unten seht ihr nun den Shader Editor. Hier wird immer das Material des markierten Objekts angezeigt. links daneben der bereits bekannte Image Editor hier können Texturen angesehen und bearbeitet werden.</description>
+      <description>In der folgenden Übung werden wir unserem Schwert Materialien geben und zum Rendern in Szene setzen. Das Schild wird in Übung 5 dazukommen.&#xA;1. Vorbereitung Öffnet das in Übung 2 modellierte Schwert. Alternativ kann auch dieses Modell verwendet werden. Wechselt in den Shading Workspace Nun haben sich einige neue Bereiche geöffnet:&#xA;unten seht ihr nun den Shader Editor. Hier wird immer das Material des markierten Objekts angezeigt. links daneben der bereits bekannte Image Editor hier können Texturen angesehen und bearbeitet werden.</description>
     </item>
     <item>
       <title>Übung 4.1 - Shading und Rendering</title>
       <link>/chapter04/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter04/exercise01_a/</guid>
-      <description>In der folgenden Übung werden wir eine Unterwasserszene rendern, um in den nachfolgenden Übungen unsere bisherig erstellten Objekte hineinzusetzen.
-1. Wasseroberfläche 1.1 Setup Startet eine neue Blender Szene Löscht den Würfel und das Punktlicht aus der Szene heraus Fügt der Szene eine neue Plane hinzu (Shift + A → Mesh → Plane). Diese Plane soll unsere Wasseroberfläche werden. Benennt sie entsprechend. Skaliert die Plane ca. um das 50 fache (S + 5 + 0) Verschiebt und dreht die Kamera so, dass sie die Wasseroberfläche von leicht schräg unten betrachtet.</description>
+      <description>In der folgenden Übung werden wir eine Unterwasserszene rendern, um in den nachfolgenden Übungen unsere bisherig erstellten Objekte hineinzusetzen.&#xA;1. Wasseroberfläche 1.1 Setup Startet eine neue Blender Szene Löscht den Würfel und das Punktlicht aus der Szene heraus Fügt der Szene eine neue Plane hinzu (Shift + A → Mesh → Plane). Diese Plane soll unsere Wasseroberfläche werden. Benennt sie entsprechend. Skaliert die Plane ca. um das 50 fache (S + 5 + 0) Verschiebt und dreht die Kamera so, dass sie die Wasseroberfläche von leicht schräg unten betrachtet.</description>
     </item>
     <item>
       <title>Übung 4.2 - Licht und Rendering</title>
       <link>/chapter04/exercise02_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/chapter04/exercise02_b/</guid>
-      <description>1. Szenenanordnung Wechselt zum zurück zum Layout Workspace
-Stellt die Ansicht auf Rendered um [1] Ordnet eure Objekte (Schwert &amp;amp; Stein) hübsch an. Modelliert einen einfachen Untergrund hinzu, dem ihr das gleiche Material wie dem Stein geben könnt (alternativ könnt ihr natürlich auch ein neues Material entwerfen). Platziert die Kamera. Klickt dazu auf das Kamera-Icon [2] oben Rechts in der 3D Ansicht (oder Numpad + 0). Über den View → Navigation → Walk Navigation kann ein &amp;ldquo;Ego&amp;rdquo; Modus aktiviert werden, in dem ihr die Ansicht mit WASD und der Maus anpassen könnt.</description>
+      <description>1. Szenenanordnung Wechselt zum zurück zum Layout Workspace&#xA;Stellt die Ansicht auf Rendered um [1] Ordnet eure Objekte (Schwert &amp;amp; Stein) hübsch an. Modelliert einen einfachen Untergrund hinzu, dem ihr das gleiche Material wie dem Stein geben könnt (alternativ könnt ihr natürlich auch ein neues Material entwerfen). Platziert die Kamera. Klickt dazu auf das Kamera-Icon [2] oben Rechts in der 3D Ansicht (oder Numpad + 0). Über den View → Navigation → Walk Navigation kann ein &amp;ldquo;Ego&amp;rdquo; Modus aktiviert werden, in dem ihr die Ansicht mit WASD und der Maus anpassen könnt.</description>
     </item>
   </channel>
 </rss>
