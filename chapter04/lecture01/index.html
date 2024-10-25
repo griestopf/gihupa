@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Lektion 4 - Shading &amp; Rendering - Computergrafik</title>
-    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Hugo 0.136.5">
 
     
     <meta name="description" content="Online-Material zum Fach Computergrafik.">
@@ -277,9 +277,62 @@
 
 
 
-<a  title="3.2 - Übung - Scultping*" href="../../chapter03/exercise02_b/">
+<a  title="3.2 - Übung - Sculpting*" href="../../chapter03/exercise02_b/">
 	
-	3.2 - Übung - Scultping*
+	3.2 - Übung - Sculpting*
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel 4</span>
+    <ul>
+      
+        
+        
+
+
+
+<a class="current" title="4 - Lektion - Shading &amp; Rendering" href="../../chapter04/lecture01/">
+	
+	4 - Lektion - Shading &amp; Rendering
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+      
+        
+        
+
+
+
+<a  title="4.1 - Übung - Shading" href="../../chapter04/exercise01_b/">
+	
+	4.1 - Übung - Shading
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="4.2 - Übung - Licht &amp; Rendering" href="../../chapter04/exercise02_b/">
+	
+	4.2 - Übung - Licht &amp; Rendering
 </a>
 
 
@@ -409,26 +462,26 @@ Definition von Material-Eigenschaften in einer grafischen Benutzeroberfläche ha
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Farbe</th>
-          <th style="text-align: left">Bedeutung</th>
+          <th>Farbe</th>
+          <th>Bedeutung</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><!-- raw HTML omitted --><strong>Grün</strong><!-- raw HTML omitted --></td>
-          <td style="text-align: left"><strong>Shader</strong> bestimmen die physikalische Funktion mit der das Material auf Licht reagiert.</td>
+          <td><!-- raw HTML omitted --><strong>Grün</strong><!-- raw HTML omitted --></td>
+          <td><strong>Shader</strong> bestimmen die physikalische Funktion mit der das Material auf Licht reagiert.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><!-- raw HTML omitted --><strong>Gelb</strong><!-- raw HTML omitted --></td>
-          <td style="text-align: left"><strong>Farben</strong> enthalten RGB Farbinformationen</td>
+          <td><!-- raw HTML omitted --><strong>Gelb</strong><!-- raw HTML omitted --></td>
+          <td><strong>Farben</strong> enthalten RGB Farbinformationen</td>
       </tr>
       <tr>
-          <td style="text-align: left"><!-- raw HTML omitted --><strong>Grau</strong><!-- raw HTML omitted --></td>
-          <td style="text-align: left"><strong>Werte</strong> enthalten z.b. Schwarz-Weiß Texturen, die nicht alle drei RGB Channel benötigen (&ldquo;Floats&rdquo;).</td>
+          <td><!-- raw HTML omitted --><strong>Grau</strong><!-- raw HTML omitted --></td>
+          <td><strong>Werte</strong> enthalten z.b. Schwarz-Weiß Texturen, die nicht alle drei RGB Channel benötigen (&ldquo;Floats&rdquo;).</td>
       </tr>
       <tr>
-          <td style="text-align: left"><!-- raw HTML omitted --><strong>Blau</strong><!-- raw HTML omitted --></td>
-          <td style="text-align: left">mit <strong>Vektoren</strong> werden 2D Texturen auf 3D Objekte gelegt. Sie enthalten <strong>x,y, und z Werte</strong> für alle Punkte auf der Oberfläche des entsprechenden Objekts.</td>
+          <td><!-- raw HTML omitted --><strong>Blau</strong><!-- raw HTML omitted --></td>
+          <td>mit <strong>Vektoren</strong> werden 2D Texturen auf 3D Objekte gelegt. Sie enthalten <strong>x,y, und z Werte</strong> für alle Punkte auf der Oberfläche des entsprechenden Objekts.</td>
       </tr>
   </tbody>
 </table>
@@ -441,50 +494,50 @@ Definition von Material-Eigenschaften in einer grafischen Benutzeroberfläche ha
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Kategorie</th>
-          <th style="text-align: left">Bedeutung</th>
+          <th>Kategorie</th>
+          <th>Bedeutung</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><a href="http://www.blenderguru.com/articles/cycles-input-encyclopedia/">Input</a></td>
-          <td style="text-align: left">Viele nützliche Werte zur weiterverarbeitung im Nodesystem.</td>
+          <td><a href="http://www.blenderguru.com/articles/cycles-input-encyclopedia/">Input</a></td>
+          <td>Viele nützliche Werte zur weiterverarbeitung im Nodesystem.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/output/index.html">Output</a></td>
-          <td style="text-align: left">Der letzte Node in jedem Material- / Licht- / Hintergrund- Nodesystem.</td>
+          <td><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/output/index.html">Output</a></td>
+          <td>Der letzte Node in jedem Material- / Licht- / Hintergrund- Nodesystem.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="http://www.blenderguru.com/articles/cycles-shader-encyclopedia/">Shader</a></td>
-          <td style="text-align: left">Die eigentlichen &ldquo;Materialien&rdquo;, die die Farbe der Oberfläche abhängig von der Lichtsituation berechnen.</td>
+          <td><a href="http://www.blenderguru.com/articles/cycles-shader-encyclopedia/">Shader</a></td>
+          <td>Die eigentlichen &ldquo;Materialien&rdquo;, die die Farbe der Oberfläche abhängig von der Lichtsituation berechnen.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.blender.org/manual/render/cycles/nodes/types/textures/index.html">Texture</a></td>
-          <td style="text-align: left">Verschiedene prozedurale- (automatisch generierte) und Bild- Texturen</td>
+          <td><a href="https://www.blender.org/manual/render/cycles/nodes/types/textures/index.html">Texture</a></td>
+          <td>Verschiedene prozedurale- (automatisch generierte) und Bild- Texturen</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/color/index.html">Color</a></td>
-          <td style="text-align: left">Viele Tools für Farbkorrektur, Farbmixer etc.</td>
+          <td><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/color/index.html">Color</a></td>
+          <td>Viele Tools für Farbkorrektur, Farbmixer etc.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/vector/index.html">Vector</a></td>
-          <td style="text-align: left">Tools zum manipulieren der <a href="https://www.blender.org/manual/de/render/cycles/nodes/types/input/texture_coordinate.html">Textur Koordinaten</a> und Bumpmaps.</td>
+          <td><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/vector/index.html">Vector</a></td>
+          <td>Tools zum manipulieren der <a href="https://www.blender.org/manual/de/render/cycles/nodes/types/input/texture_coordinate.html">Textur Koordinaten</a> und Bumpmaps.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/converter/index.html">Converter</a></td>
-          <td style="text-align: left">Rechnen Werte um oder konvertieren diese zu anderen Typen.</td>
+          <td><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/converter/index.html">Converter</a></td>
+          <td>Rechnen Werte um oder konvertieren diese zu anderen Typen.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/script.html">Script</a></td>
-          <td style="text-align: left">Hmiermit lassen sich OSL (Open Shading Language) Shader einbinden. Vorerst vernachlässigbar.</td>
+          <td><a href="https://www.blender.org/manual/de/render/cycles/nodes/types/script.html">Script</a></td>
+          <td>Hmiermit lassen sich OSL (Open Shading Language) Shader einbinden. Vorerst vernachlässigbar.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.blender.org/manual/de/editors/node_editor/nodes/groups.html">Group</a></td>
-          <td style="text-align: left">siehe 7.</td>
+          <td><a href="https://www.blender.org/manual/de/editors/node_editor/nodes/groups.html">Group</a></td>
+          <td>siehe 7.</td>
       </tr>
       <tr>
-          <td style="text-align: left">Layout</td>
-          <td style="text-align: left">tragen zur besseren Lesbarkeit komplexer Nodesysteme bei.</td>
+          <td>Layout</td>
+          <td>tragen zur besseren Lesbarkeit komplexer Nodesysteme bei.</td>
       </tr>
   </tbody>
 </table>
@@ -499,71 +552,71 @@ Definition von Material-Eigenschaften in einer grafischen Benutzeroberfläche ha
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Shader</th>
-          <th style="text-align: left">Erklärung</th>
-          <th style="text-align: left">Anwendungsbeispiele</th>
+          <th>Shader</th>
+          <th>Erklärung</th>
+          <th>Anwendungsbeispiele</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><strong>Diffuse</strong></td>
-          <td style="text-align: left">Matte Oberfläche - Siehe auch <a href="../../chapter01/lecture01/#beleuchtungsberechnung">Diffuse Light</a></td>
-          <td style="text-align: left">Stein, Plastik, Holz</td>
+          <td><strong>Diffuse</strong></td>
+          <td>Matte Oberfläche - Siehe auch <a href="../../chapter01/lecture01/#beleuchtungsberechnung">Diffuse Light</a></td>
+          <td>Stein, Plastik, Holz</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Emission</strong></td>
-          <td style="text-align: left">Lichtquelle</td>
-          <td style="text-align: left">Glühlampe, Feuer, Display</td>
+          <td><strong>Emission</strong></td>
+          <td>Lichtquelle</td>
+          <td>Glühlampe, Feuer, Display</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Glossy</strong></td>
-          <td style="text-align: left">Glanzpunkte reflektierter Lichtquellen - Siehe auch <a href="../../chapter01/lecture01/#beleuchtungsberechnung">Specular Light</a></td>
-          <td style="text-align: left">Metalle, Nichtleiter (so gut wie alle Materialien haben einen reflektierenden Anteil)</td>
+          <td><strong>Glossy</strong></td>
+          <td>Glanzpunkte reflektierter Lichtquellen - Siehe auch <a href="../../chapter01/lecture01/#beleuchtungsberechnung">Specular Light</a></td>
+          <td>Metalle, Nichtleiter (so gut wie alle Materialien haben einen reflektierenden Anteil)</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Glass</strong></td>
-          <td style="text-align: left">bricht und spiegelt Licht je nach <a href="https://en.wikipedia.org/wiki/Refractive_index">IOR</a></td>
-          <td style="text-align: left">Glas, Wasser</td>
+          <td><strong>Glass</strong></td>
+          <td>bricht und spiegelt Licht je nach <a href="https://en.wikipedia.org/wiki/Refractive_index">IOR</a></td>
+          <td>Glas, Wasser</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Mix</strong></td>
-          <td style="text-align: left">vermischt zwei Shader</td>
-          <td style="text-align: left">fortgeschrittene Materialien (siehe 5.2)</td>
+          <td><strong>Mix</strong></td>
+          <td>vermischt zwei Shader</td>
+          <td>fortgeschrittene Materialien (siehe 5.2)</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Principled</strong></td>
-          <td style="text-align: left">Universal-Shader</td>
-          <td style="text-align: left">Vereint einige Shadermodell, um fast alle Materialien darstellen zu können</td>
+          <td><strong>Principled</strong></td>
+          <td>Universal-Shader</td>
+          <td>Vereint einige Shadermodell, um fast alle Materialien darstellen zu können</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Subsurface Scattering</strong></td>
-          <td style="text-align: left">Streut Licht unter der Oberfläche</td>
-          <td style="text-align: left">menschliche Haut, Kerzenwachs, Milch</td>
+          <td><strong>Subsurface Scattering</strong></td>
+          <td>Streut Licht unter der Oberfläche</td>
+          <td>menschliche Haut, Kerzenwachs, Milch</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Toon</strong></td>
-          <td style="text-align: left">Comic Shader</td>
-          <td style="text-align: left">stilisierte Renderings</td>
+          <td><strong>Toon</strong></td>
+          <td>Comic Shader</td>
+          <td>stilisierte Renderings</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Translucent</strong></td>
-          <td style="text-align: left">Licht scheint von der Rückseite des Objekts durch</td>
-          <td style="text-align: left">Papier, Lampenschirm, Pflanzen</td>
+          <td><strong>Translucent</strong></td>
+          <td>Licht scheint von der Rückseite des Objekts durch</td>
+          <td>Papier, Lampenschirm, Pflanzen</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Transparent</strong></td>
-          <td style="text-align: left">durchsichtiger Shader</td>
-          <td style="text-align: left">Seifenblasen, maskierte Texturen</td>
+          <td><strong>Transparent</strong></td>
+          <td>durchsichtiger Shader</td>
+          <td>Seifenblasen, maskierte Texturen</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Volume Scatter</strong></td>
-          <td style="text-align: left">volumetrisches Material, in dem Licht mehrmals hin und her geworfen wird</td>
-          <td style="text-align: left">Rauch, Wolken, Nebel</td>
+          <td><strong>Volume Scatter</strong></td>
+          <td>volumetrisches Material, in dem Licht mehrmals hin und her geworfen wird</td>
+          <td>Rauch, Wolken, Nebel</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Volume Absorption</strong></td>
-          <td style="text-align: left">Absorbiert Licht je nach Tiefe des Objekts, Wesentlich performanter als Scatter</td>
-          <td style="text-align: left">farbiges Glas und Flüssigkeiten (zsm. mit Glass Shader), Athmosphäre</td>
+          <td><strong>Volume Absorption</strong></td>
+          <td>Absorbiert Licht je nach Tiefe des Objekts, Wesentlich performanter als Scatter</td>
+          <td>farbiges Glas und Flüssigkeiten (zsm. mit Glass Shader), Athmosphäre</td>
       </tr>
   </tbody>
 </table>
