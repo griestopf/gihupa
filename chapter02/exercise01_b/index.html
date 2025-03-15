@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Übung 2.1 - Polygonal Modeling - Computergrafik</title>
-    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Hugo 0.145.0">
 
     
     <meta name="description" content="Online-Material zum Fach Computergrafik.">
@@ -515,7 +515,7 @@
 
 
 
-<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/49021114">
+<a  title="Ergebnisse einreichen" href="https://hfu.li/cg">
 	
 	Ergebnisse einreichen
 </a>
@@ -575,8 +575,7 @@
 <li>Wechselt jetzt ins <em>Modeling Workspace</em> <strong>(1)</strong>.</li>
 </ul>
 <blockquote>
-<p>Beim Wechsel zum <em>Modeling Workspace</em> wird bereits automatisch der <em>Edit Mode</em> aktiviert. Um zwischen <em>Edit Mode</em> und <em>Object Mode</em> zu wechseln könnt ihr das <em>Interaction Mode Menu</em> <strong>(2)</strong> oder den Shortcut <code>Tab</code> nutzen.</p>
-</blockquote>
+<p>Beim Wechsel zum <em>Modeling Workspace</em> wird bereits automatisch der <em>Edit Mode</em> aktiviert. Um zwischen <em>Edit Mode</em> und <em>Object Mode</em> zu wechseln könnt ihr das <em>Interaction Mode Menu</em> <strong>(2)</strong> oder den Shortcut <code>Tab</code> nutzen.</p></blockquote>
 <h2 id="2-grundform">2. Grundform</h2>
 <p><img src="img/CubeMoveUp.png" alt="img"></p>
 <ul>
@@ -592,8 +591,7 @@
 <li>Erstellt mit &ldquo;Loop Cut and Slide&rdquo; oder <code>Ctrl + R</code> einen <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/subdividing/loop.html"><em>Loop Cut</em></a> in der Mitte des Würfels und löscht eine Hälfte indem ihr sie auswählt und anschließend <code>X</code> drückt.</li>
 </ul>
 <blockquote>
-<p><em>Loop Cuts</em> teilen das geasamte <em>Mesh</em> und funktionieren wie die meisten Bearbeitungsfuntionen nur gut mit <em>Quadrangles</em> bzw. <em>Quads</em> (Vierecken). <em>Meshes</em> aus <em>Triangles</em> bzw. <em>Tris</em> (Dreiecken) und/oder <em>N-Gons</em> (Vielecken) haben bei der Bearbeitung meist unerwartete und ungewollte Effekte. <em>Loop Cuts</em> werden beispielsweise durch <em>Tris</em> unterbrochen und erstellen Kanten, die sich theoretisch als Viereck gegenüberstehen, tatsächlich aber immernoch ein Dreieck mit einer unterbrochenen Kante bilden.</p>
-</blockquote>
+<p><em>Loop Cuts</em> teilen das geasamte <em>Mesh</em> und funktionieren wie die meisten Bearbeitungsfuntionen nur gut mit <em>Quadrangles</em> bzw. <em>Quads</em> (Vierecken). <em>Meshes</em> aus <em>Triangles</em> bzw. <em>Tris</em> (Dreiecken) und/oder <em>N-Gons</em> (Vielecken) haben bei der Bearbeitung meist unerwartete und ungewollte Effekte. <em>Loop Cuts</em> werden beispielsweise durch <em>Tris</em> unterbrochen und erstellen Kanten, die sich theoretisch als Viereck gegenüberstehen, tatsächlich aber immernoch ein Dreieck mit einer unterbrochenen Kante bilden.</p></blockquote>
 <p><img src="img/Grundform_1.png" alt="img"></p>
 <ul>
 <li>Verschiebt jetzt die noch vorhandenen Eckpunkte passend zum Referenzbild.</li>
@@ -603,8 +601,7 @@
 <li>Wählt im <em>Properties Panel</em> den Schraubenschlüssel <strong>(1)</strong> aus und fügt den <em>Mirror- Modifier</em> zu eurem Würfel hinzu <strong>(2)</strong>. Stellt den <em>Modifier</em> auf die richtige Achse <strong>(3)</strong> ein, um euren Würfel wieder zu vervollständigen.</li>
 </ul>
 <blockquote>
-<p>Mit einem <a href="https://docs.blender.org/manual/en/dev/modeling/modifiers/generate/mirror.html"><em>Mirror Modifier</em></a> zu arbeiten bietet sich bei allen symmetrischen Objekten an, da es die Häfte der Arbeit erspart. Selbst wenn nur die Grundform symmetrisch ist kann man Details später immer noch für die Seiten individuell anpassen.</p>
-</blockquote>
+<p>Mit einem <a href="https://docs.blender.org/manual/en/dev/modeling/modifiers/generate/mirror.html"><em>Mirror Modifier</em></a> zu arbeiten bietet sich bei allen symmetrischen Objekten an, da es die Häfte der Arbeit erspart. Selbst wenn nur die Grundform symmetrisch ist kann man Details später immer noch für die Seiten individuell anpassen.</p></blockquote>
 <p><img src="img/LoopCut_2.png" alt="img"></p>
 <ul>
 <li>Fügt nun weitere <em>Loop Cuts</em> ein. Einen horizontal und einen vertikal, wobei beim vertikalen im Menü <em>Loop Cut and Slide</em> die <em>Number of Cuts</em> auf &ldquo;2&rdquo; gestellt werden sollte.</li>
@@ -637,15 +634,13 @@
 <li>Um eine runde Kante zu erhalten, wählt die äußeren Kanten des extrudierten Randes aus und nutzt das <em>Bevel Tool</em> oder <code>Strg + B</code>.</li>
 </ul>
 <blockquote>
-<p>Die Werkzeuge <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/duplicating/extrude.html"><em>Extrude</em></a>, <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/subdividing/loop.html"><em>Loop Cut</em></a>, <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/subdividing/bevel.html"><em>Bevel</em></a> und <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/duplicating/inset.html"><em>Inset</em></a> sind die am häufigsten genutzten Funktionen beim Modellieren. Sie sind optimal um neue <em>Edge Loops</em> und Geometrieformen zu erzeugen. Bei der Nutzung des <em>Bevel Tools</em> muss allerdings aufgepasst werden, da sehr schnell <em>N-Gons</em> erzeugt werden, wenn man keinen ganzen <em>Edge Loop</em> ausgewählt hat.</p>
-</blockquote>
+<p>Die Werkzeuge <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/duplicating/extrude.html"><em>Extrude</em></a>, <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/subdividing/loop.html"><em>Loop Cut</em></a>, <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/subdividing/bevel.html"><em>Bevel</em></a> und <a href="https://docs.blender.org/manual/en/dev/modeling/meshes/editing/duplicating/inset.html"><em>Inset</em></a> sind die am häufigsten genutzten Funktionen beim Modellieren. Sie sind optimal um neue <em>Edge Loops</em> und Geometrieformen zu erzeugen. Bei der Nutzung des <em>Bevel Tools</em> muss allerdings aufgepasst werden, da sehr schnell <em>N-Gons</em> erzeugt werden, wenn man keinen ganzen <em>Edge Loop</em> ausgewählt hat.</p></blockquote>
 <ul>
 <li>Verziert den Schild nun mit den kennen gelernten Methoden. Erstellt Details wie z.B. Nieten, Dellen oder Armlaschen.</li>
 </ul>
 <h2 id="4-vervielfältigen">4. Vervielfältigen</h2>
 <blockquote>
-<p>Neben dem oben kennengelernten <em>Mirror Modifier</em> gibt es noch zahlreiche andere <em>Modifier</em>, die man zum Verändern des <em>Meshes</em> einsetzen kann.</p>
-</blockquote>
+<p>Neben dem oben kennengelernten <em>Mirror Modifier</em> gibt es noch zahlreiche andere <em>Modifier</em>, die man zum Verändern des <em>Meshes</em> einsetzen kann.</p></blockquote>
 <p><img src="img/ArrayModifier.png" alt="img"></p>
 <ul>
 <li>
@@ -661,8 +656,7 @@
 </ul>
 <h2 id="einschneiden">Einschneiden</h2>
 <blockquote>
-<p>Mit dem <a href="https://docs.blender.org/manual/en/dev/modeling/modifiers/generate/booleans.html"><em>Boolean- Modifier</em></a> könnt ihr Objekte aus anderen Objekten ausschneiden.</p>
-</blockquote>
+<p>Mit dem <a href="https://docs.blender.org/manual/en/dev/modeling/modifiers/generate/booleans.html"><em>Boolean- Modifier</em></a> könnt ihr Objekte aus anderen Objekten ausschneiden.</p></blockquote>
 <p><img src="img/BoolObjekte.png" alt="img"></p>
 <ul>
 <li>
@@ -686,8 +680,7 @@
 <li>Wendet den Modifier nun mit &ldquo;apply&rdquo; an und löscht oder verschiebt anschließend die Objekte.</li>
 </ul>
 <blockquote>
-<p>Den <em>Boolean Modifier</em> während des Modellierens anzuwenden ist nicht zu empfehlen, da er die Struktur des Meshes (Topologie) zerstört und viele <em>N-Gons</em> erzeugt.</p>
-</blockquote>
+<p>Den <em>Boolean Modifier</em> während des Modellierens anzuwenden ist nicht zu empfehlen, da er die Struktur des Meshes (Topologie) zerstört und viele <em>N-Gons</em> erzeugt.</p></blockquote>
 <h2 id="aufgabe">Aufgabe</h2>
 <ul>
 <li>Verändert das Aussehen aller vier Schilde indem ihr unterschiedliche Objekte an unterschiedlichen Stellen ausschneidet.</li>

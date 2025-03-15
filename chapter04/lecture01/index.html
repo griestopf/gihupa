@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Lektion 4 - Shading &amp; Rendering - Computergrafik</title>
-    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Hugo 0.145.0">
 
     
     <meta name="description" content="Online-Material zum Fach Computergrafik.">
@@ -515,7 +515,7 @@
 
 
 
-<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/49021114">
+<a  title="Ergebnisse einreichen" href="https://hfu.li/cg">
 	
 	Ergebnisse einreichen
 </a>
@@ -604,8 +604,7 @@ Definition von Material-Eigenschaften in einer grafischen Benutzeroberfläche ha
 <ul>
 <li>Das vorinstallierte Addon <strong>&ldquo;Node Wrangler&rdquo;</strong> ist sehr hilfreich im Nodeeditor. Es ermöglicht u.a.  jederzeit mit <code>Ctrl</code> + <code>Shift</code> + <code>LMB</code> auf einen Node (auch Texturen etc.) zu klicken um eine Vorschau zu bekommen. Es kann in <em>Edit &gt; Preferences</em> &gt; <em>Addons</em> aktiviert werden.</li>
 <li>Hier wurde die Cycles Renderengine verwendet, die Nodes sind jedoch in Eevee (in den Übungen verwendeter Echtzeit Renderer) gleich.</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <h2 id="3-grundprinzip">3. Grundprinzip</h2>
 <h3 id="in--und-output">In- und Output</h3>
 <p>In Blender haben Materialnodes entweder <strong>Inputs</strong>, <strong>Outputs</strong> oder beides. Die die Richtung geht immer <strong>von links nach rechts</strong>. Das Bedeutet Inputs befinden sich immer links, Outputs immer rechts.</p>
@@ -648,8 +647,7 @@ Definition von Material-Eigenschaften in einer grafischen Benutzeroberfläche ha
 </table>
 <p>Grundsätzlich sind fast alle Sockel miteinander kombinierbar. Zum Beispiel werden Farben in Graustufen umgewandelt, falls sie in einen grauen Sockel gezogen werden und umgekehrt.</p>
 <blockquote>
-<p>Sogar Vektoren lassen sich als Farben verwenden und umgekehrt, da diese von Cycles auch als RGB Werte für x, y und z interpretiert werden.</p>
-</blockquote>
+<p>Sogar Vektoren lassen sich als Farben verwenden und umgekehrt, da diese von Cycles auch als RGB Werte für x, y und z interpretiert werden.</p></blockquote>
 <h3 id="node-kategorien">Node Kategorien</h3>
 <p>Im &ldquo;Add&rdquo; Menü des Node Editors sind die Nodes in Kategorien unterteilt. Die Sockeltypen der Nodes hängen nur teilweise mit den Kategorien zusammen:</p>
 <table>
@@ -782,11 +780,9 @@ Definition von Material-Eigenschaften in einer grafischen Benutzeroberfläche ha
   </tbody>
 </table>
 <blockquote>
-<p><!-- raw HTML omitted --><strong>!!</strong><!-- raw HTML omitted --> Alle Shader, die die Obefläche beeinflussen werden in den <em><strong>Surface</strong></em> Input des <em>Material Output</em> Nodes gezogen, <em>Volume</em> und <em>Volume Scatter</em> in den <em><strong>Volume</strong></em> Input. Ansonsten entstehen Fehler.</p>
-</blockquote>
+<p><!-- raw HTML omitted --><strong>!!</strong><!-- raw HTML omitted --> Alle Shader, die die Obefläche beeinflussen werden in den <em><strong>Surface</strong></em> Input des <em>Material Output</em> Nodes gezogen, <em>Volume</em> und <em>Volume Scatter</em> in den <em><strong>Volume</strong></em> Input. Ansonsten entstehen Fehler.</p></blockquote>
 <blockquote>
-<p>Detailliertere Informationen zu allen Shadern (außer Principled) finden sich u.a. in der <a href="http://www.blenderguru.com/articles/cycles-shader-encyclopedia/">&ldquo;Cycles Shader Encyclopedia&rdquo; auf blenderguru.com</a></p>
-</blockquote>
+<p>Detailliertere Informationen zu allen Shadern (außer Principled) finden sich u.a. in der <a href="http://www.blenderguru.com/articles/cycles-shader-encyclopedia/">&ldquo;Cycles Shader Encyclopedia&rdquo; auf blenderguru.com</a></p></blockquote>
 <h3 id="principled-bsdf">Principled BSDF</h3>
 <p>Der wichtigste am einfachsten zu verwendende Shader ist der &ldquo;Principled BSDF&rdquo; Shader, der mit wenigen Parametern komplexe physikalisch korrekte Materialien ermöglicht.
 Die wichtigsten Parameter sind:</p>
@@ -799,8 +795,7 @@ Die wichtigsten Parameter sind:</p>
 <p><strong>Clearcoat:</strong> Zweite Schicht &ldquo;Specular&rdquo; z.b. nötig für Autolack und lackierte Holzböden.</p>
 <p><strong>Transmission:</strong> Transparenz. Der Brechungsindex (z.b. 1.45-1.5 für Glas) kann mit dem <strong>IOR</strong> Wert eingestellt werden.</p>
 <blockquote>
-<p>Umfassende Dokumentation zu diesem Shader <a href="https://renderman.pixar.com/resources/RenderMan_20/PxrDisney.html">hier</a> (Das Shader-Modell wurde ursprünglich von Disney für die Renderengine &ldquo;Renderman&rdquo; entwickelt.)</p>
-</blockquote>
+<p>Umfassende Dokumentation zu diesem Shader <a href="https://renderman.pixar.com/resources/RenderMan_20/PxrDisney.html">hier</a> (Das Shader-Modell wurde ursprünglich von Disney für die Renderengine &ldquo;Renderman&rdquo; entwickelt.)</p></blockquote>
 <p><img src="img/principled.png" alt="textureSetup">
 <em>einfaches Autolack Material mit nur einem Node</em></p>
 

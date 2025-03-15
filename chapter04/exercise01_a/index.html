@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Übung 4.1 - Shading und Rendering - Computergrafik</title>
-    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Hugo 0.145.0">
 
     
     <meta name="description" content="Online-Material zum Fach Computergrafik.">
@@ -512,7 +512,7 @@
 
 
 
-<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/49021114">
+<a  title="Ergebnisse einreichen" href="https://hfu.li/cg">
 	
 	Ergebnisse einreichen
 </a>
@@ -554,8 +554,7 @@
 </ul>
 <blockquote>
 <p><img src="img/02_walk_mode.png" alt="img">
-Hilfreich zum Platzieren der Kamera kann der <strong>Walk Navigation</strong> Modus sein. Wechselt dazu in die Kameraansicht <!-- raw HTML omitted -->1<!-- raw HTML omitted --> und wählt *<strong>View → Navigation → Walk Navigation</strong> <!-- raw HTML omitted -->2<!-- raw HTML omitted -->. In diesem Modus könnt ihr euch nun wie in einem First Person Spiel mit der Maus umsehen und mit <code>W</code> <code>A</code> <code>S</code> <code>D</code> bewegen.</p>
-</blockquote>
+Hilfreich zum Platzieren der Kamera kann der <strong>Walk Navigation</strong> Modus sein. Wechselt dazu in die Kameraansicht <!-- raw HTML omitted -->1<!-- raw HTML omitted --> und wählt *<strong>View → Navigation → Walk Navigation</strong> <!-- raw HTML omitted -->2<!-- raw HTML omitted -->. In diesem Modus könnt ihr euch nun wie in einem First Person Spiel mit der Maus umsehen und mit <code>W</code> <code>A</code> <code>S</code> <code>D</code> bewegen.</p></blockquote>
 <p><img src="img/03_sun.png" alt="img"></p>
 <ul>
 <li>
@@ -585,16 +584,14 @@ angezeigt.</li>
 <li>oben links ist der Dateiexplorer zu finden. Per Drag &amp; Drop können z.b. Bilddateien in den Image Editor oder als Textur in den Shader Editor gesetzt werden.</li>
 <li>Rechts hat sich im bereits bekannten Properties Editor der <em>World</em>-Tab geöffnet. Hier kann der Hintergrund der Szene eingefärbt werden.</li>
 <li>Der 3D Viewport ist nun in der <em>Lookdev</em> Ansicht [1]. Diese Ansicht erlaubt es, Objekte in einigen Voreingestellten Lichtsituationen darzustellen und die Materialien richtig anzuzeigen. Im <em>Shading</em> Menü oben rechts finden sich die Optionen dazu.</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <h3 id="12-material">1.2 Material</h3>
 <p><img src="img/05_nodes1.png" alt="img"></p>
 <ul>
 <li>Fügt im <strong>Shader Editor</strong> einen <strong>Bump</strong> und einen <strong>Noise Texture</strong> Node hinzu</li>
 </ul>
 <blockquote>
-<p>Für die Textur verwenden wir hier prozedurale Texturen. So werden Texturen genannt, die nicht in einer Bilddatei gespeichert sind, sondern beim Rendern generiert werden. Die wohl bekannteste prozedurale Textur ist das sogen. <a href="https://en.wikipedia.org/wiki/Perlin_noise">Perlin Noise</a>, das von Ken Perlin für den Film Tron entwickelt wurde. Ähnlich funktioniert auch Blenders Noise Texture Node.</p>
-</blockquote>
+<p>Für die Textur verwenden wir hier prozedurale Texturen. So werden Texturen genannt, die nicht in einer Bilddatei gespeichert sind, sondern beim Rendern generiert werden. Die wohl bekannteste prozedurale Textur ist das sogen. <a href="https://en.wikipedia.org/wiki/Perlin_noise">Perlin Noise</a>, das von Ken Perlin für den Film Tron entwickelt wurde. Ähnlich funktioniert auch Blenders Noise Texture Node.</p></blockquote>
 <ul>
 <li>Verbindet die Nodes wie im Screenshot gezeigt und passt die eingerahmten Werte entsprechen an (Werte müssen nicht genau so übernommen werden - so dass es gut aussieht.)</li>
 <li>Rotiert eventuell das Sonnenlicht nocheinmal, so dass die Struktur des Wassers aus Kamerasicht gut hervorgehoben wird.</li>
@@ -614,8 +611,7 @@ angezeigt.</li>
 </ul>
 <blockquote>
 <p><img src="img/anisotropie.png" alt="img">
-<a href="https://docs.arnoldrenderer.com/display/A5AFMUG/Volume+Attributes#VolumeAttributes-Anisotropy">Anisotropie</a> kontrolliert die Richtung, in welche Lichtstrahlen in Volumetrischen Materialien gestreut werden.</p>
-</blockquote>
+<a href="https://docs.arnoldrenderer.com/display/A5AFMUG/Volume+Attributes#VolumeAttributes-Anisotropy">Anisotropie</a> kontrolliert die Richtung, in welche Lichtstrahlen in Volumetrischen Materialien gestreut werden.</p></blockquote>
 <h3 id="22-lichtstrahlen">2.2 Lichtstrahlen</h3>
 <p>Da Blenders <em>Echtzeitrenderengine</em> <a href="https://docs.blender.org/manual/en/latest/render/eevee/introduction.html">Eevee</a> nicht live die Streuung von Licht unter der Wasseroberfläche berechnen kann, müssen wir hier ein wenig trixen um überzeugend refraktierte Sollenstrahlen unter der Wasseroberfläche zu bekommen.</p>
 <p><img src="img/07_material_options.png" alt="img"></p>
@@ -632,11 +628,9 @@ angezeigt.</li>
 <li>Stellt deren Werte ca. entsprechend dem Screenshot ein. Hier gibt es kein richtig oder Falsch, testet aus was gut aussieht.</li>
 </ul>
 <blockquote>
-<p>Damit sagen wir der Renderengine, dass immer wenn es darum geht einen Schatten zu werfen der untere Input des Mix Nodes verwendet werden soll, in jedem anderen Fall jedoch trotzdem der obere. Die &ldquo;Maske&rdquo; für den Schatten erzeugen wir hier mit der <strong>Noise Textur</strong>, deren Kontrast wir mit dem <strong>Color Ramp</strong> erhöhen.</p>
-</blockquote>
+<p>Damit sagen wir der Renderengine, dass immer wenn es darum geht einen Schatten zu werfen der untere Input des Mix Nodes verwendet werden soll, in jedem anderen Fall jedoch trotzdem der obere. Die &ldquo;Maske&rdquo; für den Schatten erzeugen wir hier mit der <strong>Noise Textur</strong>, deren Kontrast wir mit dem <strong>Color Ramp</strong> erhöhen.</p></blockquote>
 <blockquote>
-<p>Der ColorRamp Node nimmt als Input Graustufen und gibt dann abhängig von der Helligkeit des Inputs die im Verlauf angegebenen Farben aus. Schwarz (links) nach Weiß (rechts).</p>
-</blockquote>
+<p>Der ColorRamp Node nimmt als Input Graustufen und gibt dann abhängig von der Helligkeit des Inputs die im Verlauf angegebenen Farben aus. Schwarz (links) nach Weiß (rechts).</p></blockquote>
 <p><img src="img/result_water.png" alt="img"></p>
 <p>Nun sollte euere Szene etwa so aussehen.</p>
 <h3 id="3-sandboden">3. Sandboden</h3>
@@ -649,8 +643,7 @@ angezeigt.</li>
 <li>Fügt einige Hügel und Unebenheiten hinzu. Unterteilt dazu das Mesh im Editmode mit <em><strong>Rechtsklick → Subdivide</strong></em> mehrmals und nutzt Proportional Editing, um das Mesh organisch zu formen. Beim Verformen des Meshes mit Proportional Editing kann das Mausrad benutzt werden, um dessen Radius zu erhöhen.</li>
 </ul>
 <blockquote>
-<p>Beim Proportional Editing werden Verticies in der Nähe der selektierten Geomtrie abfallend zur Distanz mitbewegt.</p>
-</blockquote>
+<p>Beim Proportional Editing werden Verticies in der Nähe der selektierten Geomtrie abfallend zur Distanz mitbewegt.</p></blockquote>
 <h2 id="4-ein-stein">4. Ein Stein</h2>
 <ul>
 <li>Nutzt die Techniken aus Übung 3, um um mit Subdivision Surface Modeling schnell einen einfachen Stein zu modellieren.</li>
@@ -676,8 +669,7 @@ angezeigt.</li>
 <li>Fügt nun eine zweite Noise Texture hinzu und vermischt diese mit einem <em>MixRGB</em> Node mit den Texturkoordinaten.</li>
 </ul>
 <blockquote>
-<p>Die Texturkoordinaten werden in Blender auf die gleicheWeise behandelt wie Farben (<em>X = Rot, Y = Grün, Z = Blau</em>) und können dementsprechend auch mit Texturen vermischt werden. In diesem Beispiel ist das Ergebnis davon die Verzerrung der ersten Noise-Textur mithilfe der Zweiten. Damit lässt sich eine natürlicher wirkende Textur erzugen.</p>
-</blockquote>
+<p>Die Texturkoordinaten werden in Blender auf die gleicheWeise behandelt wie Farben (<em>X = Rot, Y = Grün, Z = Blau</em>) und können dementsprechend auch mit Texturen vermischt werden. In diesem Beispiel ist das Ergebnis davon die Verzerrung der ersten Noise-Textur mithilfe der Zweiten. Damit lässt sich eine natürlicher wirkende Textur erzugen.</p></blockquote>
 <ul>
 <li>Die Verzerrung kann nun mit dem <em>Fac</em> des Mix Nodes kontrolliert werden.</li>
 <li>Experimentiert solange mit den Scale Werten der beiden Texturen, bis ihr zufrieden mit dem Ergebnis seid. Stellt <em>Detail</em> beider Texturen vorerst ca. auf 8 (mehr Detail, detailliertes Ergebnis aber längere Renderzeit)</li>
@@ -688,8 +680,7 @@ angezeigt.</li>
 <li>Stellt den <em>Distance</em> Wert im Bump Node auf einen realistischeren Wert, z.b. 0.1</li>
 </ul>
 <blockquote>
-<p><a href="https://de.wikipedia.org/wiki/Bumpmapping">Bumpmapping</a> manipuliert die Normalen des Materials abhängig der verwendeten Graustufentextur. Somit entsteht die Illusion einer Struktur auf der Oberfläche. Dabei werden mit dunklen Farben auf der Textur Rillen erzeugt und mit hellen Farben Erhebungen.</p>
-</blockquote>
+<p><a href="https://de.wikipedia.org/wiki/Bumpmapping">Bumpmapping</a> manipuliert die Normalen des Materials abhängig der verwendeten Graustufentextur. Somit entsteht die Illusion einer Struktur auf der Oberfläche. Dabei werden mit dunklen Farben auf der Textur Rillen erzeugt und mit hellen Farben Erhebungen.</p></blockquote>
 <ul>
 <li>setzt den Stein entsprechend in Szene und dupliziert ihn nach Bedarf.</li>
 </ul>

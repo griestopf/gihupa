@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Lektion 5 - Materialien &amp; Texturen - Computergrafik</title>
-    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Hugo 0.145.0">
 
     
     <meta name="description" content="Online-Material zum Fach Computergrafik.">
@@ -515,7 +515,7 @@
 
 
 
-<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/49021114">
+<a  title="Ergebnisse einreichen" href="https://hfu.li/cg">
 	
 	Ergebnisse einreichen
 </a>
@@ -599,8 +599,7 @@ Richtig kombiniert können viele Materialien von denen man es nicht denken würd
 <p>Die Regler sind größtenteils selbsterklärend. <em>Detail</em> sollte zwecks Performance nicht übertrieben. Werte über 15 sind visuell meist kaum wahrnehmbar.</p>
 <blockquote>
 <p><!-- raw HTML omitted -->💡<!-- raw HTML omitted --> Interessante Muster ergeben sich z.b., wenn die Scale einer Textur von einer anderen kontrolliert wird, wie hier z.b. <em>Voronoi</em> und <em>Wave</em>.
-<img src="img/procedural.jpg" alt="procedural"></p>
-</blockquote>
+<img src="img/procedural.jpg" alt="procedural"></p></blockquote>
 <h3 id="prozedurale-texturen-einfärben">Prozedurale Texturen einfärben</h3>
 <p>Um Prozedurale Texturen einzufärben, können diese z.b. mit dem Faktor eines <em><strong>MixRGB</strong></em> Nodes verbunden oder der <em><strong>Color Ramp</strong></em> Node verwendet werden. Dieser nimmt je nach Helligkeit des inputs die entsprechende Farbe auf einem Farbverlauf an.
 <img src="img/ape_on_fire.jpg" alt="apeOnFire"> this Ape is on Fire!</p>
@@ -614,19 +613,16 @@ Richtig kombiniert können viele Materialien von denen man es nicht denken würd
 <p><img src="img/mixShader.jpg" alt="mixShader"><br>
 <em>Wie bei MixRGB Node wird der untere Shader je nach Helligkeit der Maske stärker verwendet.</em></p>
 <blockquote>
-<p><!-- raw HTML omitted -->💡<!-- raw HTML omitted --> Um mehr als zwei Farben / Shader zu miteinander kombinieren kann der Output des Mix Nodes erneut mit einem Mix Node verbunden werden.</p>
-</blockquote>
+<p><!-- raw HTML omitted -->💡<!-- raw HTML omitted --> Um mehr als zwei Farben / Shader zu miteinander kombinieren kann der Output des Mix Nodes erneut mit einem Mix Node verbunden werden.</p></blockquote>
 <blockquote>
 <p><!-- raw HTML omitted --><strong>!!</strong><!-- raw HTML omitted --> Aus Performancegründen sollte - <strong>falls nur Farben gemixt werden</strong> und der Shader sowieso gleich ist - immer der <strong>MixRGB</strong> Node verwendet werden.<br>
-<img src="img/pitfall1.jpg" alt="pitfall1"></p>
-</blockquote>
+<img src="img/pitfall1.jpg" alt="pitfall1"></p></blockquote>
 <h3 id="math">Math</h3>
 <p>Der Math Node verrechnet zwei Werte je nach ausgewählter Rechenoperation. Werte von <strong>0.0 bis 1.0</strong> werden hierbei als <strong>Graustufen</strong> interpretiert wenn sie danach mit einen Shader / Farbsockel verbunden werden. Es sind jedoch auch höhere Aus- und Eingabewerte möglich.
 <img src="img/math.jpg" alt="math"><br>
 <em>Anwendungsbeispiel für Math bei dem eine Prozedurale Voronoi Textur über den &ldquo;Less Than&rdquo; Operator zu einem Riesensternenfeld umgewandelt wird. Alle Helligkeitswerte <strong>unter 0.1</strong> der Textur werden zu <strong>weiß (1.0)</strong>, der Rest zu <strong>schwarz (0.0)</strong></em>.</p>
 <blockquote>
-<p><!-- raw HTML omitted --><strong>💡</strong><!-- raw HTML omitted --> Der &ldquo;<em>Viewer</em>&rdquo; Node in diesem Beispiel ist ein temporärer Emission Shader des Node Wrangler Addons, der entsteht um Farben / Werte ohne manuell hinzugefügten Shader mit <code>Ctrl</code> + <code>Shift</code> + <code>LMB</code> auf den jeweiligen Node schnell anzuzeigen.</p>
-</blockquote>
+<p><!-- raw HTML omitted --><strong>💡</strong><!-- raw HTML omitted --> Der &ldquo;<em>Viewer</em>&rdquo; Node in diesem Beispiel ist ein temporärer Emission Shader des Node Wrangler Addons, der entsteht um Farben / Werte ohne manuell hinzugefügten Shader mit <code>Ctrl</code> + <code>Shift</code> + <code>LMB</code> auf den jeweiligen Node schnell anzuzeigen.</p></blockquote>
 <h2 id="7-bump-und-displacement">7. Bump und Displacement</h2>
 <h3 id="prinzip">Prinzip</h3>
 <p>Bumpmaps können die Oberfläche von Materialien wesentlich <strong>detaillierter erscheinen lassen als sie eigentlich sind</strong>. Sie erzeugen mit Texturen scheinbare Erhebungen/Einkerbungen auf einer Oberfläche. In Wahrheit werden jedoch nur die &ldquo;Normalen&rdquo; der Oberfläche verändert, die u.a. den Lichausfallwinkel bestimmen. Der Schwindel fliegt auf, wenn man sieht dass die Ränder des Objekts ihre Form gar nicht verändert haben.</p>
@@ -641,8 +637,7 @@ Richtig kombiniert können viele Materialien von denen man es nicht denken würd
 <img src="img/displacementMap.png" alt="displacement">
 <em>wie man sieht sollten Bump- und Normalmapping nicht übertrieben werden</em></p>
 <blockquote>
-<p><!-- raw HTML omitted --><strong>💡</strong><!-- raw HTML omitted --> Der eigentliche Grund, dass diese Möglichkeit existiert ist das seit neustem hinzugefügte Feature für &ldquo;Micropolygon Displacement&rdquo; - also echtes, nicht &ldquo;gefaktes&rdquo; Displacement abhängig von der Bildschirmauflösung. Ausführliches Tutorial vom YouTube Kanal &ldquo;Blenderguru&rdquo; dazu <a href="https://www.youtube.com/watch?v=dRzzaRvVDng">hier.</a></p>
-</blockquote>
+<p><!-- raw HTML omitted --><strong>💡</strong><!-- raw HTML omitted --> Der eigentliche Grund, dass diese Möglichkeit existiert ist das seit neustem hinzugefügte Feature für &ldquo;Micropolygon Displacement&rdquo; - also echtes, nicht &ldquo;gefaktes&rdquo; Displacement abhängig von der Bildschirmauflösung. Ausführliches Tutorial vom YouTube Kanal &ldquo;Blenderguru&rdquo; dazu <a href="https://www.youtube.com/watch?v=dRzzaRvVDng">hier.</a></p></blockquote>
 <h2 id="8-node-gruppen">8. Node Gruppen</h2>
 <h3 id="prinzip-1">Prinzip</h3>
 <p>Oft gibt es Gruppen von Nodes, die in der selben Anordnung immer wieder vorkommen. Um sich die Arbeit der Wiederhohlung zu sparen und den Nodeeditor bei komplexen Materialien aufgeräumt zu halten gibt es sogenannte Node Groups. Diese ermöglichen es <strong>Gruppen von Nodes</strong> zu &ldquo;eigenen Nodes&rdquo; <strong>zusammenzufassen</strong> und immer wieder mit unterschiedlichen Parametern zu verwenden. Node Groups lassen sich gut mit <strong>Funktionen</strong> im Programmieren vergleichen.</p>
@@ -670,13 +665,11 @@ Richtig kombiniert können viele Materialien von denen man es nicht denken würd
 </li>
 </ol>
 <blockquote>
-<p><!-- raw HTML omitted --><strong>💡</strong><!-- raw HTML omitted -->Mit Druck auf die Taste <code>N</code> innerhalb der Node Group öffnet sich eine Seitenleiste in der weitere Einstellungen z.b. die Benamung der In- und Outputs geändert werden können.</p>
-</blockquote>
+<p><!-- raw HTML omitted --><strong>💡</strong><!-- raw HTML omitted -->Mit Druck auf die Taste <code>N</code> innerhalb der Node Group öffnet sich eine Seitenleiste in der weitere Einstellungen z.b. die Benamung der In- und Outputs geändert werden können.</p></blockquote>
 <blockquote>
 <p><!-- raw HTML omitted --><strong>💡</strong><!-- raw HTML omitted --> Sehr gute Tutorials zu Nodegruppen für Nichtleiter und Metalle finden sich auf dem YouTube  Kanal &ldquo;Blenderguru&rdquo;<br>
 <a href="https://www.youtube.com/watch?v=V3wghbZ-Vh4&amp;t">How to Make Photorealistic PBR Materials - Part 1</a><br>
-<a href="https://www.youtube.com/watch?v=m1PkSViBi-M&amp;t">How to Make Photorealistic PBR Materials - Part 2: Metals</a></p>
-</blockquote>
+<a href="https://www.youtube.com/watch?v=m1PkSViBi-M&amp;t">How to Make Photorealistic PBR Materials - Part 2: Metals</a></p></blockquote>
 <h2 id="9-uv-editing">9. UV Editing</h2>
 <h3 id="texturkoordinaten">Texturkoordinaten</h3>
 <p>Mit den Texture Coordinate und <a href="#mapping">Mapping Nodes</a> kann die Zuordnung beeinflusst werden,

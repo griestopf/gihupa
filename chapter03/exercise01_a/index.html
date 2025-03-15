@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Übung 3.1 - Subdivision Surface Modeling - Computergrafik</title>
-    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Hugo 0.145.0">
 
     
     <meta name="description" content="Online-Material zum Fach Computergrafik.">
@@ -512,7 +512,7 @@
 
 
 
-<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/49021114">
+<a  title="Ergebnisse einreichen" href="https://hfu.li/cg">
 	
 	Ergebnisse einreichen
 </a>
@@ -552,8 +552,7 @@
 <li>Fügt dem Würfel im Modifier Tab der <em><strong>Properties Editors</strong></em> einen <a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html"><strong>Subdivision Surface Modifier</strong></a> hinzu  <!-- raw HTML omitted -->1<!-- raw HTML omitted --> und stellt die <strong>Subdivisions</strong> vorerst auf 4 (<!-- raw HTML omitted -->2<!-- raw HTML omitted -->) .</li>
 </ul>
 <blockquote>
-<p>Subdivisions sind aufgeteilt in <em><strong>Viewport</strong></em> und <em><strong>Render</strong></em> Subdivisions. <strong>Viewport</strong>-Subdivisions für die Ansicht beim Bearbeiten der Modelle, *<strong>Render</strong>-Subdivisions für die Anzahl an Subdivisions beim Rendern (erzeugen des finalen Bildes).</p>
-</blockquote>
+<p>Subdivisions sind aufgeteilt in <em><strong>Viewport</strong></em> und <em><strong>Render</strong></em> Subdivisions. <strong>Viewport</strong>-Subdivisions für die Ansicht beim Bearbeiten der Modelle, *<strong>Render</strong>-Subdivisions für die Anzahl an Subdivisions beim Rendern (erzeugen des finalen Bildes).</p></blockquote>
 <ul>
 <li>Stellt im Rechtsklickmenü <!-- raw HTML omitted -->3<!-- raw HTML omitted --> das <strong>Shading</strong> auf Smooth.</li>
 </ul>
@@ -565,12 +564,10 @@
 <li>Aktiviert in dessen Titelleiste das <strong>Edit Mode</strong> Symbol, damit dieser auch während dem Verändern des Meshes angezeigt wird.</li>
 </ul>
 <blockquote>
-<p>Modifier werden von oben nach unten in der Liste angewand. Dementsprechend kann der Displacement Modifier die vom Sudivision Modifier erzeugte zusätzliche Geometrie verwenden</p>
-</blockquote>
+<p>Modifier werden von oben nach unten in der Liste angewand. Dementsprechend kann der Displacement Modifier die vom Sudivision Modifier erzeugte zusätzliche Geometrie verwenden</p></blockquote>
 <blockquote>
 <p><img src="img/displacement.png" alt="img">
-Der Displacement Modifier wendet eine Textur (kann z.b. auch eine Bilddatei sein) auf ein Mesh an, indem er die Oberfläche abhängig von der Helligkeit der Textur absenkt (Helligkeit &lt; 0.5) oder erhöht (Helligkeit &gt; 0.5)</p>
-</blockquote>
+Der Displacement Modifier wendet eine Textur (kann z.b. auch eine Bilddatei sein) auf ein Mesh an, indem er die Oberfläche abhängig von der Helligkeit der Textur absenkt (Helligkeit &lt; 0.5) oder erhöht (Helligkeit &gt; 0.5)</p></blockquote>
 <ul>
 <li>Klickt im Displacement-Modifier unter Texture auf <em><strong>New</strong></em> und klickt dann auf das Symbol ganz rechts daneben (siehe Screenshot), um direkt zum <em><strong>Texture-Tab</strong></em> des Properties Editors zu wechseln.</li>
 </ul>
@@ -593,8 +590,7 @@ Der Displacement Modifier wendet eine Textur (kann z.b. auch eine Bilddatei sein
 </ul>
 <blockquote>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>Anwendung der verschiedenen Tools</p>
-</blockquote>
+<p>Anwendung der verschiedenen Tools</p></blockquote>
 <h3 id="22-verzweigungen">2.2 Verzweigungen</h3>
 <p><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p>Verzweigungen können verschärft werden, indem kurz davor ein Loop-Cut hinzugefügt wird oder indem der <a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edges.html#edge-crease"><strong>Mean Crease</strong></a> - Wert in der Sidebar (<code>N</code>) für die betroffenen Kanten erhöht wird. Dieser gibt an, wie stark die Geometrie zu den Kanten &ldquo;hingezogen&rdquo; wird.</p>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Übung 4.1 - Shading - Computergrafik</title>
-    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Hugo 0.145.0">
 
     
     <meta name="description" content="Online-Material zum Fach Computergrafik.">
@@ -515,7 +515,7 @@
 
 
 
-<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/49021114">
+<a  title="Ergebnisse einreichen" href="https://hfu.li/cg">
 	
 	Ergebnisse einreichen
 </a>
@@ -552,8 +552,7 @@
 </ul>
 <p><img src="img/5.1.1.png" alt="5.1.1"></p>
 <blockquote>
-<p>Nun haben sich einige neue Bereiche geöffnet:</p>
-</blockquote>
+<p>Nun haben sich einige neue Bereiche geöffnet:</p></blockquote>
 <blockquote>
 <ul>
 <li>unten seht ihr nun den <em>Shader Editor</em>. Hier wird immer das Material des markierten Objekts
@@ -562,8 +561,7 @@ angezeigt.</li>
 <li>oben links ist der Dateiexplorer zu finden. Per Drag &amp; Drop können z.b. Bilddateien in den Image Editor oder als Textur in den Shader Editor gesetzt werden.</li>
 <li>Rechts hat sich im bereits bekannten Properties Editor der <em>World</em>-Tab geöffnet. Hier kann der Hintergrund der Szene eingefärbt werden.</li>
 <li>Der 3D Viewport ist nun in der <em>Lookdev</em> Ansicht [1]. Diese Ansicht erlaubt es, Objekte in einigen Voreingestellten Lichtsituationen darzustellen und die Materialien richtig anzuzeigen. Im <em>Shading</em> Menü oben rechts finden sich die Optionen dazu.</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <ul>
 <li>
 <p>wechselt im Propertier Editor vorerst zum <em>Material</em> Tab [2]</p>
@@ -579,8 +577,7 @@ angezeigt.</li>
 <li>stellt den <em>Metallic</em> Wert auf 1.0</li>
 </ul>
 <blockquote>
-<p>Generell sind die meisten Materialien <strong>entweder</strong> Nichtleiter (metallic = 0.0) <strong>oder</strong> Metalle (metallic = 1.0). Daher ergibt es nur für Ausnahmefällen (z.b. bestimmte Arten von Autolack) Sinn, Werte dazwischen zu verwenden.</p>
-</blockquote>
+<p>Generell sind die meisten Materialien <strong>entweder</strong> Nichtleiter (metallic = 0.0) <strong>oder</strong> Metalle (metallic = 1.0). Daher ergibt es nur für Ausnahmefällen (z.b. bestimmte Arten von Autolack) Sinn, Werte dazwischen zu verwenden.</p></blockquote>
 <ul>
 <li>stellt den Roughness Wert auf ca. 0.03 (perfekt glatte Materialen gibt es kaum)</li>
 </ul>
@@ -617,23 +614,20 @@ angezeigt.</li>
 <li>Da Stein unpoliert recht rau ist, stellt Roughness auf einen recht hohen Wert, z.b. 0.8</li>
 </ul>
 <blockquote>
-<p>Für die Textur wollen wir prozedurale Texturen verwenden. So werden Texturen genannt, die nicht in einer Bilddatei gespeichert sind, sondern beim Rendern generiert werden. Die wohl bekannteste prozedurale Textur ist das sogen. Perlin Noise, das von Ken Perlin für den Film Tron entwickelt wurde. Ähnlich funktioniert auch Blenders Noise Texture Node.</p>
-</blockquote>
+<p>Für die Textur wollen wir prozedurale Texturen verwenden. So werden Texturen genannt, die nicht in einer Bilddatei gespeichert sind, sondern beim Rendern generiert werden. Die wohl bekannteste prozedurale Textur ist das sogen. Perlin Noise, das von Ken Perlin für den Film Tron entwickelt wurde. Ähnlich funktioniert auch Blenders Noise Texture Node.</p></blockquote>
 <ul>
 <li>Fügt im Node-Editor <em>Texture → Noise Texture</em> hinzu und verbindet den <em>Fac</em> Output der Textur mit dem <em>Base Color</em> Input des Principled BSDF Shaders.</li>
 <li>Da die Farben noch recht blass sind, nutzen wir einen <em>Conveerter → ColorRamp</em> Node, um die Textur einzufärben. Zieht diesen Node zwischen die Textur und den Principled Shader.</li>
 </ul>
 <p><img src="img/5.1.5.1.gif" alt="pl1"></p>
 <blockquote>
-<p>Der ColorRamp Node nimmt als Input Graustufen und gibt dann abhängig von der Helligkeit des Inputs die im Verlauf angegebenen Farben aus. Schwarz (links) nach Weiß (rechts).</p>
-</blockquote>
+<p>Der ColorRamp Node nimmt als Input Graustufen und gibt dann abhängig von der Helligkeit des Inputs die im Verlauf angegebenen Farben aus. Schwarz (links) nach Weiß (rechts).</p></blockquote>
 <p><img src="img/5.1.5.2.png" alt="vector distort"></p>
 <ul>
 <li>Fügt nun eine zweite Noise Texture hinzu und verischt diese mit einem <em>MixRGB</em> Node mit den Texturkoordinaten.</li>
 </ul>
 <blockquote>
-<p>Die Texturkoordinaten werden in Blender auf die gleicheWeise behandelt wie Farben (<em>X = Rot, Y = Grün, Z = Blau</em>) und können dementsprechend auch mit Texturen vermischt werden. In diesem Beispiel ist das Ergebnis davon die Verzerrung der ersten Noise-Textur mithilfe der Zweiten. Damit lässt sich eine natürlicher wirkende Textur erzugen.</p>
-</blockquote>
+<p>Die Texturkoordinaten werden in Blender auf die gleicheWeise behandelt wie Farben (<em>X = Rot, Y = Grün, Z = Blau</em>) und können dementsprechend auch mit Texturen vermischt werden. In diesem Beispiel ist das Ergebnis davon die Verzerrung der ersten Noise-Textur mithilfe der Zweiten. Damit lässt sich eine natürlicher wirkende Textur erzugen.</p></blockquote>
 <ul>
 <li>Die Verzerrung kann nun mit dem <em>Fac</em> des Mix Nodes kontrolliert werden.</li>
 <li>Experimentiert solange mit den Scale Werten der beiden Texturen, bis ihr zufrieden mit dem Ergebnis seid. Stellt <em>Detail</em> beider Texturen vorerst ca. auf 8 (mehr Detail, detailliertes Ergebnis aber längere Renderzeit)</li>
@@ -644,8 +638,7 @@ angezeigt.</li>
 <li>Stellt den <em>Distance</em> Wert im Bump Node auf einen realistischeren Wert, z.b. 0.1</li>
 </ul>
 <blockquote>
-<p><a href="https://de.wikipedia.org/wiki/Bumpmapping">Bumpmapping</a> manipuliert die Normalen des Materials abhängig der verwendeten Graustufentextur. Somit entsteht die Illusion einer Struktur auf der Oberfläche. Dabei werden mit dunklen Farben auf der Textur Rillen erzeugt und mit hellen Farben Erhebungen.</p>
-</blockquote>
+<p><a href="https://de.wikipedia.org/wiki/Bumpmapping">Bumpmapping</a> manipuliert die Normalen des Materials abhängig der verwendeten Graustufentextur. Somit entsteht die Illusion einer Struktur auf der Oberfläche. Dabei werden mit dunklen Farben auf der Textur Rillen erzeugt und mit hellen Farben Erhebungen.</p></blockquote>
 <h2 id="ressourcen--tutorials-zum-thema">Ressourcen &amp; Tutorials zum Thema</h2>
 <p><strong>Einige Informationen zu Materialnodes finden sich in <a href="../../chapter04/lecture01/#2-materialnodes-grundlagen">Lektion 4</a></strong></p>
 <p>Visuelle Repräsentation der Parameter der Principled BSDF Shadernodes:

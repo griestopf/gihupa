@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Übung 6 - Katapultbelagerung - Computergrafik</title>
-    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Hugo 0.145.0">
 
     
     <meta name="description" content="Online-Material zum Fach Computergrafik.">
@@ -515,7 +515,7 @@
 
 
 
-<a  title="Ergebnisse einreichen" href="https://felix.hs-furtwangen.de/url/RepositoryEntry/49021114">
+<a  title="Ergebnisse einreichen" href="https://hfu.li/cg">
 	
 	Ergebnisse einreichen
 </a>
@@ -585,8 +585,7 @@
 <blockquote>
 <ul>
 <li>Nun sollten in der <em>Timeline</em> zwei orangene Punkte, die Keyframes repräsentieren erschienen sein [2]. Diese könnt ihr auch im Nachhinein noch verschieben. Selekteren und Verschieben der Keyframes mit der linken Maustaste.</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <ul>
 <li>
 <p>In den <em>Transform</em> Ansicht des Objekts [3] seht ihr nun, dass sich die Werte bei <em>Rotation</em> gelb bzw. grün verfärbt haben.</p>
@@ -634,16 +633,14 @@
 </ul>
 <blockquote>
 <p>Die <strong>Kollisionsform</strong> (Collision Shape) umzustellen ist wichtig, damit die Kugel nicht aus der Schaufel herausrollt. <em><strong>Convex Hull</strong></em> erzeugt als Kollisionsform eine Hülle um das Mesh, dass Vertiefungen nicht beachtet. Das ist performant, aber hierfür zu ungenau. <em><strong>Mesh</strong></em> verwendet die tatsächliche Form des Meshes.
-<img src="img/shape.png" alt="hull"></p>
-</blockquote>
+<img src="img/shape.png" alt="hull"></p></blockquote>
 <h3 id="33-physics-einstellungen">3.3 Physics Einstellungen</h3>
 <ul>
 <li>Probiert aus, was beim Abspielen der Animation passiert. Wenn Die Kugel durch die Schaufel durchfällt, aktiviert im <em>Properties Editor</em> → <em>Scene Tab</em> → <em>Rigid Body World</em> → <em><strong>Split Impulse</strong></em>.</li>
 </ul>
 <p><img src="img/04.png" alt="options"></p>
 <blockquote>
-<p>Falls ihr nun bemerkt, dass ihr die Drehbewegung des Katapults nochmal anpassen müsst, springt einfach an die Positionen der entsprechenden Keyframes, dreht den Arm in eine neue Position und überschreibt den Keyframe (so wie man ihn auch setzt mit <code>i</code>)</p>
-</blockquote>
+<p>Falls ihr nun bemerkt, dass ihr die Drehbewegung des Katapults nochmal anpassen müsst, springt einfach an die Positionen der entsprechenden Keyframes, dreht den Arm in eine neue Position und überschreibt den Keyframe (so wie man ihn auch setzt mit <code>i</code>)</p></blockquote>
 <h2 id="4-kamera-constraint">4. Kamera Constraint</h2>
 <p><strong>Nun wollen wir die Kamera dem Geschoss folgen lassen.</strong></p>
 <p><img src="img/05.png" alt="trackto"></p>
@@ -658,8 +655,7 @@
 </ul>
 <blockquote>
 <p>Da die Kamera in ihrem Lokalen Achsensystem die Richtung -Z als &ldquo;Vorwärts&rdquo; festgelegt hat und ihre Y Achse nach oben zeigt, werden diese Werte für den Constraint verwendet.
-<img src="img/trackto.png" alt="trackto erklärung"></p>
-</blockquote>
+<img src="img/trackto.png" alt="trackto erklärung"></p></blockquote>
 <h2 id="5-rendern">5. Rendern</h2>
 <h3 id="51-freiwillig---materialien-und-licht">5.1 Freiwillig - Materialien und Licht</h3>
 <ul>
